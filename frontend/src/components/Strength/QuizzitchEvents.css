@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#eventDetailsMainPage{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+#eventDetailsMainPage .eventDetailsContent{
+    text-align: center;
+    width: 80%;
+    padding: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    margin: 0px auto;
+    transition: 0.5s;
+}
+
+#eventDetailsMainPage .eventDetailsContent:hover{
+    background: #e91e63;
+}
+
+#eventDetailsMainPage .eventDetailsContent h1{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+#eventDetailsMainPage .eventDetailsContent p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+#eventDetailsMainPage .eventsListOneByOne{
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer{
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems{
+    list-style: none;
+    background: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    height: 180px;
+    margin: 25px 0;
+}
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems .time{
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems:hover .time{
+    background: #e91e63;
+}
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems .time h2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems .time h2 span{
+    font-size: 30px;
+}
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems .details{
+    padding: 20px;
+    box-sizing: border-box;
+    /* background: rgba(255,255,255,0.2); */
+    background-color: hsl(219, 48%, 8%);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems .details h3{
+    position: relative;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems .details p{
+    color: #fff;
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems .details a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 0.2px solid #fff;
+    margin-top: 25px;
+    font-size: 15px;   
+    color: #fff;
+}
+
+
+#eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems .details a:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    border: 0;
+}
+
+@media (max-width:650px){
+    #eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems{
+        height: 200px;
+    }
+}
+
+@media (max-width:600px){
+    #eventDetailsMainPage .eventsListOneByOne .eventListContainer .eventListItems{
+        height: 250px;
+    }
+    #eventDetailsMainPage .eventsListOneByOne .eventListContainer{
+        width: 100%;
+    }
+    #eventDetailsMainPage .eventDetailsContent{
+        width: 95%;
+    }
+}

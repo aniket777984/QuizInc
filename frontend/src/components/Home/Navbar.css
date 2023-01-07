@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #000; */
+}
+
+@media (max-width:1000px){
+    nav{
+        z-index: 20000;
+    }
+}
+
+nav ul{
+    display: flex;
+}
+
+nav .logo{
+    width: 80px;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    color: #1b1b1b;
+    background: #e68027;
+}
+
+nav ul .active a{
+    color: #1b1b1b;
+    /* background: #39ff14; */
+    background: #e68027;
+    transition: 0.3s ease background;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    margin-top: 40px;
+    font-size: 160px;
+    color: #39ff14;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
+    background: url(../../assets/backtext.png);
+    /* background-color: rgb(50, 255, 14); */
+    background-color: #e68027;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back-title 40s linear infinite;
+}
+
+@keyframes back-title{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+/* .content h4{
+    margin-top: 40px;
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../../assets/backtext.png);
+    background-color: #0095c2;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 5s linear infinite;
+} */
+
+.content h4{
+    margin-top: 40px;
+    font-size: 60px;
+    color: #fff;
+}
+
+
+/* .content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 1px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 30px;
+    background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);;
+    transition: all 1s;
+}
+
+.content a:hover{
+    size: 1.1;
+    background-color: #39ff14;
+} */
+
+.homepagelinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.homepageexploremore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
+    /* background: #e68027; */
+    animation: scaling5 1s infinite alternate;
+  }
+  
+  .homepageexploremore h3{
+    color: #fff;
+    margin-right: 10px;
+  }
+  .homepageexploremore .fa{
+    font-size: 30px;
+    color: #fff;
+  }
+  
+
+.content .exploremorebtn{
+    animation: scaling5 1s infinite alternate;
+}
+@keyframes scaling5 {
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio : 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio : 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media (max-width:700px){
+    .back-video{
+        right: -400px;
+    }
+    .content h1{
+        font-size: 80px;
+    }
+    .content h4{
+        font-size: 30px;
+    }
+    nav .menu-btn i{
+        display: block;
+    }
+
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top: 73px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 1s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        color: cyan;
+        background: none;
+    }
+}
+
+/* css for the sticky navbar */
+
+nav.sticky{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    background: #000;
+    transition: padding 1s;
+    border-bottom: 1px solid #fff;
+}

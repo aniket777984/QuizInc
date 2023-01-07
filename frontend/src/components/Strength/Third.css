@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.thirdYearStrengthContainer{
+    position: relative;
+    width: 100%;
+    /* background-image: url(../../assets/team_bg.jpg);
+    background-position: center;
+    background-size: cover; */
+    background: #fff;
+    padding-top: 30px;
+    overflow: hidden;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+
+
+@media (max-width:1000px){
+
+    .thirdYearStrengthContainer{
+        overflow: scroll;
+        max-height: 1000vh;
+    }
+    .thirdYearStrengthContainer::after{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+    .thirdYearStrengthContainer::before{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+}
+
+
+.thirdYearStrengthContainer h2{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+.thirdYearStrengthMain{
+    padding-top: 90px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.thirdYearStrengthCard{
+    position: relative;
+    width: 330px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+    transition: 1s;
+    padding: 5px 30px;
+    /* background-color: #1e1f22; */
+    background: rgba(35,35,35,0.88);
+    cursor: pointer;
+    margin: 80px 20px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.thirdYearStrengthCard:hover{
+    height: 280px;
+}
+
+.thirdYearStrengthImgBox{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-80px);
+    z-index: 10;
+}
+.thirdYearStrengthImgBox img{
+    width: 60%;
+    border-radius: 50%;
+}
+
+.thirdYearStrengthMainContent{
+    padding: 10px 10px;
+    text-align: center;
+    transform: translateY(-450px);
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+
+.thirdYearStrengthCard:hover .thirdYearStrengthMainContent{
+    opacity: 1;
+    transform: translateY(-180px);
+    display: block;
+}
+
+.thirdYearStrengthMainContent h2{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.thirdYearStrengthMainContent h4{
+    font-size: 20px;
+    margin-bottom: 7px;
+    color: #e68027;
+}
+.thirdYearStrengthMainContent p{
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+.thirdYearStrengthLinks a{
+    position: relative;
+    display: inline;
+    margin-right: 17px;
+}
+
+.thirdYearStrengthLinks a .fa{
+    transition: scale 0.5s;
+    font-size: 20px;
+    color: white;
+}
+.thirdYearStrengthLinks a .facebook{
+    background: brown;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+.thirdYearStrengthLinks a .instagram{
+    background: brown;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+.thirdYearStrengthLinks a .fa:hover{
+    scale: 1.1;
+    background: darkred;
+}
+
+
+.thirdYearStrengthMainContent .thirdYearStrengthLinks img{
+    width: 40px;
+    margin: 10px;
+    background: brown;
+    border-radius: 50%;
+    transition: scale 0.5s;
+}
+
+.thirdYearStrengthMainContent .thirdYearStrengthLinks img:hover {
+    scale: 1.2;
+    background: darkred;
+}
+
+@media (max-width:700px){
+    .thirdYearStrengthMain{
+        height: 400vh;
+
+    }
+    .thirdYearStrengthCard{
+        margin: 10px 10px;
+    }
+}
+
+.thirdYearStrength-title{
+    position: relative;
+}
+
+.thirdYearStrength-title:after{
+    content: '';
+    background: #ff523b;
+    border-radius: 3px;
+    width: 100px;
+    height: 5px;
+    border: 5px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}

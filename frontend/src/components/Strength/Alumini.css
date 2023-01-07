@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.aluminisectionhighesttag{
+    background-image: url(../../assets/team_bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.aluminiStrengthContainer{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-bottom:70px;
+    background: rgba(35,35,35,0.88);
+}
+
+.aluminiStrengthContainerwhite{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-bottom:70px;
+    background: #fff;
+}
+
+
+
+@media (max-width:1000px){
+
+    .aluminiStrengthContainer{
+        overflow: scroll;
+        max-height: 1000vh;
+    }
+    .aluminiStrengthContainerwhite{
+        overflow: scroll;
+        max-height: 1000vh;
+    }
+    .aluminiStrengthContainer::after{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+    .aluminiStrengthContainer::before{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.aluminiStrengthBasket,.aluminiStrengthBasketwhite{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    max-width: 90%;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.aluminiStrengthBasket .aluminiStrengthCard{
+    position: relative;
+    width: 250px;
+    height: 280px;
+    padding: 30px;
+    margin: 50px 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+}
+
+.aluminiStrengthBasketwhite .aluminiStrengthCard{
+    position: relative;
+    width: 250px;
+    height: 280px;
+    padding: 30px;
+    margin: 50px 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    /* background: rgba(0,0,0,0.5); */
+    background: rgba(35,35,35,0.88);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+}
+
+@media (max-width:700px){
+    .aluminiStrengthBasket{
+        max-width: 100%;
+    }
+    .aluminiStrengthBasket .aluminiStrengthCard{
+        flex-basis: 100%;
+    }
+    .aluminiStrengthBasketwhite{
+        max-width: 100%;
+    }
+    .aluminiStrengthBasketwhite .aluminiStrengthCard{
+        flex-basis: 100%;
+    }
+}
+
+.aluminiStrengthBasket .aluminiStrengthCard img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.aluminiStrengthBasket .aluminiStrengthCard .aluminiStrengthContent{
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.aluminiStrengthBasket .aluminiStrengthCard:hover .aluminiStrengthContent{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.aluminiStrengthBasket .aluminiStrengthCard .aluminiStrengthContent h3{
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.aluminiStrengthBasket .aluminiStrengthCard .aluminiStrengthContent h4{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.aluminiStrengthContainer .alumini-title{
+    text-align: center;
+    margin: 0px auto 30px;
+    padding-top: 40px;
+    position: relative;
+    line-height: 60px;
+    color: #fff;
+}
+.aluminiStrengthContainer .alumini-title:after{
+    content: '';
+    background: #fff;
+    width: 80px;
+    height: 5px;
+    border: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.spaceProviderForAlumini{
+    height: 100px;
+}
+.spaceProviderForAluminifirstsection{
+    height: 80px;
+}
+
+.aluminiStrengthContainerwhite .alumini-title{
+    text-align: center;
+    margin: 0px auto 30px;
+    padding-top: 40px;
+    position: relative;
+    line-height: 60px;
+    color: #444;
+    font-size: 30px;
+}
+
+.aluminiStrengthBasketwhite .aluminiStrengthCard img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.aluminiStrengthBasketwhite .aluminiStrengthCard .aluminiStrengthContent{
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.aluminiStrengthBasketwhite .aluminiStrengthCard:hover .aluminiStrengthContent{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.aluminiStrengthBasketwhite .aluminiStrengthCard .aluminiStrengthContent h3{
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.aluminiStrengthBasketwhite .aluminiStrengthCard .aluminiStrengthContent h4{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}

@@ -1,0 +1,229 @@
+
+  #registerImage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  #registerImage > img {
+    width: 60px;
+    border-radius: 100%;
+    margin-right: 20px;
+  }
+
+
+
+  #registerImage > input::file-selector-button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding-top: 3px;
+  }
+
+
+ .chooseFileBox{
+    width: 100%;
+    height: 32px;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
+
+
+.chooseFileBox::placeholder{
+    color: #fff;
+    font-size: 12px;
+}
+
+@media (max-width:700px){
+  .chooseFileBox{
+    padding-top: 0px;
+    font-size: 2px;
+  }
+  #registerImage > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding-bottom: 20px;
+    
+  }
+}
+
+  
+  @media screen and (max-width: 600px) {
+    #registerImage > img {
+      width: 8vmax;
+      border-radius: 100%;
+    }
+  
+    #registerImage > input::file-selector-button {
+      height: 7vh;
+      font: 400 1.8vmax cursive;
+    }
+  }
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logSigncontainer{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    /* background: rgb(187,187,245); */
+    /* background-image: linear-gradient(rgba(0,0,100,0.8),rgba(0,0,100,0.8)); */
+    /* background-image: url(../../assets/pixelBackground.png);
+    background-position: center;
+    background-size: cover; */
+    background: #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logSignCard{
+    width: 400px;
+    height: 490px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);   
+    perspective: 1000px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.5);
+}
+.logSignInnerBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    background: rgba(35,35,35,0.88);
+    border-radius: 20px;
+}
+
+
+.logSignFront, .logSignBack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(35,35,35,0.88);
+    padding: 50px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+.logSignBack{
+    transform: rotateY(180deg);
+}
+
+
+@media (max-width:800px){
+  .logSignCard{
+    width: 90%;
+  }
+  .logSignFront, .logSignBack{
+    padding-top: 55px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.logSignCard h2{
+    font-weight: normal;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logSignInnerBox .input-box{
+    width: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    margin: 6px 0;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.logSignInnerBox .logSignFront .input-box{
+  margin: 20px 0;
+}
+
+.logSignInnerBox .input-box::placeholder{
+  font-size: 15px;
+  color: #fff;
+}
+
+.logSignInnerBox button{
+    width: 100%;
+    border: 2px solid #fff;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.logSignCard .logSignSubmitBtn{
+  background: #fff;
+  color: #6e7876;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+.logSignInnerBox button:hover{
+  scale: 1.1;
+}
+
+.logSignCard .logSignBtn{
+    margin-top: 20px;
+    background: transparent;
+}
+.logSignCard a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+}
+  
+
+@media(max-width:700px){
+  .logSigncontainer .quizinclogo{
+    width: 100px;
+  }
+  .logSigncontainer{
+    height: 100vh;
+  }
+}

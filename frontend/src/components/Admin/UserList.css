@@ -1,0 +1,107 @@
+.dash{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.userListContainer {
+    width: 98%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    padding: 0px 40px;
+  }
+  
+  #userListHeading {
+    font: 400 2rem "Roboto";
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color: red;
+    transition: all 0.5s;
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  .userListTable {
+    background-color: white;
+    border: none !important;
+  }
+  
+  .userListTable div {
+    font: 300 1vmax "Roboto";
+    color: rgba(0, 0, 0, 0.678);
+    border: none !important;
+  }
+  
+  .userListTable a,
+  .userListTable button {
+    color: rgba(0, 0, 0, 0.527);
+    transition: all 0.5s;
+  }
+  
+  .userListTable a:hover {
+    color: tomato;
+  }
+  
+  .userListTable button:hover {
+    color: rgb(236, 30, 30);
+  }
+  
+  .MuiDataGrid-columnHeader div {
+    color: red;
+    font-size: 20px;
+  }
+  .link{
+    margin-top: 40px;
+  }
+  .link>a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    color: red;
+    font-size: 25px;
+    background-color: white;
+    transition: all 1s;
+  }
+  .link>a:hover{
+    background-color: orange;
+    color: white;
+  }
+  .DialogBox {
+    min-width: 500px;
+    height: 100vh;
+    padding: 2vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .DialogBox>h4{
+    margin-bottom: 20px;
+  }
+  .deleteButton{
+    cursor: pointer;
+    color: red;
+    margin: 30px;
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .userListTable div {
+      font: 300 4vw "Roboto";
+    }
+    .userListContainer{
+      padding: 0px;
+    }
+  }
+  

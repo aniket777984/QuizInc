@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.fourthYearMain{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url(../../assets/team_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+    background: #fff;
+    overflow: hidden;
+}
+
+@media (max-width:1000px){
+
+    .fourthYearMain::after{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+    .fourthYearMain::before{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+}
+
+
+
+.fourthYearStrengthContainer{
+    max-width: 1000px;
+    margin: 100px auto 0px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.fourthYearStrengthCard{
+    position: relative;
+    margin: 20px 0;
+    width: 250px;
+    height: 300px;
+    margin: 50px 30px;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    border-radius: 5px;
+}
+
+.fourthYearStrengthCard:hover{
+    z-index: 10;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
+}
+
+.fourthYearStrengthCard .fouthYearStrengthImgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+
+.fourthYearStrengthCard:hover .fouthYearStrengthImgBox{
+    transform: rotateY(-135deg);
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.fourthYearStrengthCard .fouthYearStrengthImgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fourthYearStrengthCard .fourthYearStrengthDetails{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    /* background: rgba(255,255,255,0.2); */
+    background: rgba(35,35,35,0.88);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-bottom: 2px solid grey;
+    border-right-width: 2px solid grey;
+}
+
+.fourthYearStrengthCard .fourthYearStrengthDetails h4{
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.fourthYearStrengthCard .fourthYearStrengthDetails h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:transparent;
+    -webkit-text-stroke: 0.2px #fff;
+    background: url(../../assets/backtext.png);
+    background-color: #e68027;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 5s linear infinite;
+}
+
+.fourthYearStrengthCard .fourthYearStrengthDetails h5{
+    margin-bottom: 10px;
+    color: burlywood;
+}
+
+.fourthYearStrengthCard .fourthYearStrengthDetails p{
+    color: #e87613;
+    margin-bottom: 18px;
+    font-weight: 5000;
+}
+
+.fourthYearStrengthDetails a{
+    position: relative;
+    display: inline;
+    margin-right: 17px;
+}
+
+
+
+.fourthYearStrengthDetails a .fa{
+    transition: scale 0.5s;
+    font-size: 20px;
+    color: white;
+}
+.fourthYearStrengthDetails a .facebook{
+    background: brown;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+.fourthYearStrengthDetails a .instagram{
+    background: brown;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+.fourthYearStrengthDetails a .fa:hover{
+    scale: 1.1;
+    background: darkred;
+}
+
+
+@media (max-width:700px){
+}
+ 
+
+
+
+.strength-title{
+    text-align: center;
+    padding-top: 50px;
+    margin: 0px auto 20px;
+    position: relative;
+    color: #fff;
+}
+.strength-title:after{
+    content: '';
+    background: #ff523b;
+    width: 100px;
+    border-radius: 10px;
+    height: 5px;
+    border: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}

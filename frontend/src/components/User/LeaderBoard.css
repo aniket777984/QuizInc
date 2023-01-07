@@ -1,0 +1,259 @@
+.leaderboard-emptyCart {
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../../assets/pixelBackground.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .empty-container{
+    width: 300px;
+    color: #fff;
+  }
+  .empty-container h1{
+    margin-bottom: 40px;
+  }
+
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.leaderboard-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/pixelBackground.png);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.leaderboard-container h1{
+    margin-top: 30px;
+    position: relative;
+    color: transparent;
+  -webkit-text-stroke: 1px #39ff14;
+  background: url(../../assets/backtext.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 5s linear infinite;
+}
+
+.leaderboard-container h1:after{
+    content: '';
+    background: #fff;
+    width: 120px;
+    height: 2px;
+    border: 5px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+
+.card{
+    width: 90%;
+    max-width: 880px;
+    color: #fff;
+    text-align: center;
+    padding: 40px 35px;
+    padding-top: 20px;
+    margin: 45px 0;
+    /* border: 1px solid rgba(255,255,255,0.3); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    height: 85vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+@media (max-width:700px){
+    .card{
+        height: 60vh;
+    }
+}
+
+.leaderboard-search-box{
+    margin-top: 50px;
+}
+.leaderboard-search-box .search{
+    border-radius: 15px;
+    border: none;
+    width: 220px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: transparent;
+    border: 1px solid #0095c2;
+    color: #fff;
+}
+.leaderboard-search-box .search:focus{
+    outline: none;
+}
+
+.card::-webkit-scrollbar{
+    width: 1rem;
+    color: #0095c2;
+}
+
+table{
+    width: 50em;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+
+@media (max-width:700px){
+    .card{
+        width: 98%;
+        padding: 50px 0px;
+    }
+    table{
+        width: 100%;
+        border: none;
+    }
+    .card::-webkit-scrollbar{
+        width: 0.1rem;
+    }
+}
+
+@media (max-width:900px){
+    .table{
+        width: 100%;
+        border: none;
+    }
+}
+
+
+table thead{
+    opacity: .8;
+    background-color: #39ff14;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+table img{
+    width:2em;
+    height: 2em;
+    border-radius: 100%;
+
+}
+table td{
+    max-width: 2em;
+    padding: .5em;
+    text-align: center;
+}
+
+tbody tr{
+    box-shadow: 0 2px rgba(100,100,100,.5);
+    border-radius: 10px;
+}
+tbody tr:hover{
+    transform: scale(1.025);
+    transition: .2s ease-in-out;
+}
+tbody tr td:nth-child(2) p{
+    display: inline-block;
+    transform: translateY(-.5em);
+    padding-left: .5em;
+    text-align: left;
+}
+table td:nth-child(2){
+    max-width: 5em;
+}
+tbody tr:nth-child(even){
+    background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
+}
+tbody tr p{
+    margin-left: 10px;
+}
+
+.leaderboard-link-box{
+    margin-top: 30px;
+}
+
+.leaderboard-link-box a{
+    text-decoration: none;
+    width: 220px;
+    align-self: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    color: #fff;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
+}
+
+leaderboard-link-box .leaderboardBtn:hover{
+    scale: 1.1;
+}
+
+
+
+@media (max-width:700px){
+    tbody tr p{
+        margin-left: 2px;
+        font-size: 15px;
+    }
+    .leaderboard-container h1{
+        display: none;
+    }
+}
+
+
+/* css for the text video container */
+
+.leaderboard-video-container{
+    height: 15vh;
+    width: 100%;
+    position: relative;
+}
+.leaderboard-video-container video{
+    width: 100%;
+    height: 100%;
+}
+.leaderboard-text-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+}
+.leaderboard-text-box h1{
+    -webkit-text-stroke-color: #fff;
+}
+
+@media (max-width:700px){
+    .leaderboard-text-box{
+        font-size: 15px;
+    }
+    .leaderboard-video-container{
+        height: 10vh;
+    }
+}    

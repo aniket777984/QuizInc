@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.secondYearStrengthContainer{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url(../../assets/quizzitchBacknew.png); */
+    /* background: rgba(35,35,35,0.88); */
+    background: #fff;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    padding-top: 50px;
+}
+
+
+@media (max-width:1000px){
+
+    .secondYearStrengthContainer{
+        overflow: scroll;
+        max-height: 1000vh;
+    }
+    .secondYearStrengthContainer::after{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+    .secondYearStrengthContainer::before{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.secondYearStrengthBasket{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    max-width: 90%;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.secondYearStrengthBasket .secondYearStrengthCard{
+    position: relative;
+    width: 300px;
+    height: 345px;
+    margin: 50px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    /* background: rgba(255,255,255,0.2); */
+    background: rgba(35,35,35,0.88);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+}
+
+@media (max-width:700px){
+    .secondYearStrengthBasket{
+        max-width: 100%;
+    }
+    .secondYearStrengthBasket .secondYearStrengthCard{
+        flex-basis: 100%;
+    }
+}
+
+.secondYearStrengthBasket .secondYearStrengthCard img{
+    width: 45%;
+    border-radius: 50%;
+}
+
+.secondYearStrengthBasket .secondYearStrengthCard .secondYearStrengthContent{
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+@media (max-width:800px){
+    .secondYearStrengthBasket .secondYearStrengthCard .secondYearStrengthContent{
+        opacity: 1;
+    }
+}
+
+.secondYearStrengthBasket .secondYearStrengthCard:hover .secondYearStrengthContent{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.secondYearStrengthBasket .secondYearStrengthCard .secondYearStrengthContent h3{
+    font-size: 1.6em;
+    color: #e68027;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.secondYearStrengthBasket .secondYearStrengthCard .secondYearStrengthContent h5{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.secondYearStrengthBasket .secondYearStrengthCard .secondYearStrengthContent p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.secondYearStrengthBasket .secondYearStrengthCard .secondYearStrengthContent a{
+    position: relative;
+    display: inline;
+    margin-right: 17px;
+}
+
+
+
+.secondYearStrengthBasket .secondYearStrengthCard .secondYearStrengthContent a .fa{
+    transition: scale 0.5s;
+    font-size: 20px;
+    color: white;
+}
+.secondYearStrengthContent a .facebook{
+    background: brown;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+.secondYearStrengthContent a .instagram{
+    background: brown;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+.secondYearStrengthBasket .secondYearStrengthCard .secondYearStrengthContent a .fa:hover{
+    scale: 1.1;
+    background: darkred;
+}
+
+
+
+
+
+.secondYear-title{
+    text-align: center;
+    margin: 0px auto 30px;
+    padding-top: 40px;
+    position: relative;
+    line-height: 60px;
+    color: #fff;
+}

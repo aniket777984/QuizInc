@@ -1,0 +1,128 @@
+#aluminiNavbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 30;
+    background: rgba(35,35,35,0.88);    
+}
+#aluminiNavbar ul{
+    display: flex;
+}
+
+#aluminiNavbar .logo{
+    width: 80px;
+}
+#aluminiNavbar ul li{
+    list-style: none;
+    margin-left: 40px;
+}
+#aluminiNavbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+#aluminiNavbar ul li a:hover{
+    color: #1b1b1b;
+    background: #fff;
+}
+
+#aluminiNavbar ul .active a{
+    color: #1b1b1b;
+    background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
+    transition: 0.3s ease background;
+}
+
+#aluminiNavbar ul .activeforever a{
+    color: #1b1b1b;
+    /* background:#39ff14; */
+    background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
+    transition: 0.3s ease background;
+}
+
+
+
+
+#aluminiNavbar .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media (max-width:700px){
+    .back-video{
+        right: -400px;
+    }
+    .content h1{
+        font-size: 80px;
+    }
+    .content h4{
+        font-size: 30px;
+    }
+    #aluminiNavbar .menu-btn i{
+        display: block;
+    }
+
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    #aluminiNavbar ul{
+        position: fixed;
+        top: 73px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    #aluminiNavbar ul li{
+        margin: 40px 0;
+    }
+    #aluminiNavbar ul li a{
+        font-size: 20px;
+    }
+    #aluminiNavbar ul li a:hover{
+        color: cyan;
+        background: none;
+    }
+}
+
+/* css for the sticky #aluminiNavbarbar */
+
+#aluminiNavbar.sticky{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 5%;
+    background: #000;
+    transition: padding 1s;
+    border-bottom: 1px solid #fff;
+}
+
+.styling{
+    height: 200vh;
+}
+
+.spaceStyling{
+    height: 200px;
+}

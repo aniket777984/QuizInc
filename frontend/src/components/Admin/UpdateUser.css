@@ -1,0 +1,49 @@
+.updateUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+}
+.updateUserForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 40vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+.updateUserForm>h1{
+    color: tomato;
+    margin-bottom: 30px;
+}
+.updateUserForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+.updateUserForm > div > input,
+.updateUserForm > div > select,
+.updateUserForm > div > textarea {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+    margin: 10px 0px;
+}
+  
+.updateUserForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+}

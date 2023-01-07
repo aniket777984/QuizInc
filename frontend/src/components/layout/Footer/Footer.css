@@ -1,0 +1,75 @@
+footer {
+    padding: 2vmax;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .midFooter {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  .midFooter > h1 {
+    font-size: 3vmax;
+    font-family: "Roboto";
+    color: #eb4034;
+  }
+  .midFooter > p {
+    max-width: 60%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 1vmax auto;
+  }
+  
+  .rightFooter {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightFooter > h4 {
+    font-family: "Roboto";
+    font-size: 1.7vmax;
+    text-decoration: underline;
+  }
+  .rightFooter > a {
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    transition: all 0.5s;
+    margin: 0.5vmax;
+  }
+  
+  .rightFooter > a:hover {
+    color: #eb4034;
+  }
+  
+  @media (max-width : 700px){
+      .rightFooter{
+          flex-basis: 100%;
+      }
+      .midFooter{
+          flex-basis: 100%;
+          margin-bottom: 30px;
+      }
+      .midFooter>p{
+        font-size: 2vmax;
+      }
+      .rightFooter > h4 {
+          font-size: 3vmax;
+      }
+      .rightFooter > a{
+          font-size: 2.5vmax;
+      }
+      .leftFooter > h4{
+          font-size: 2vmax;
+      }
+      .leftFooter > p{
+          font-size: 1.7vmax;
+      }
+      .leftFooter > img{
+          width: 15vmax;
+      }
+  }

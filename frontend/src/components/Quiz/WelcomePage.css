@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.welcome-hero{
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+
+.welcome-content{
+  width: 90%;
+  max-width: 400px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px 35px;
+  border: 1px solid rgba(255,255,255,0.3);
+  /* background: rgba(255,255,255,0.2); */
+  background: rgba(35,35,35,0.88);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+}
+
+.welcome-content img{
+    width: 120px;
+    margin-bottom: 50px;
+}
+
+@keyframes scaling {
+    to {
+      transform: scale(1.2);
+    }
+}
+
+.welcome-content h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.welcome-content a{
+    text-decoration: none;
+    width: 180px;
+    align-self: center;
+    padding: 10px 2px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.2s;
+    color: #fff;
+    /* background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%); */
+    background: #e87613;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.6s;
+    margin-bottom: 30px;
+}
+
+.welcome-content .welcomepagebutton{
+    animation: scaling2 1.5s linear infinite alternate;
+    transform-style: preserve-3d;
+}
+
+@keyframes scaling2 {
+    to {
+      transform: scale(1.1);
+    }
+}
+
+
+
+
+
+@media (max-width:700px){
+    .welcome-content{
+        padding: 5px 20px ;
+    }
+    .welcome-content h4{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .welcome-content img{
+        margin-top: 20px;
+        width: 150px;
+    }
+}
+
+/* cubeskills css*/
+.welcome-content > .welcome-homeSkills {
+    height: 200px;
+    position: relative;
+    box-sizing: border-box;
+    perspective: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+  
+.welcome-content .homeCubeSkills {
+    width: 70px;
+    height: 70px;
+    animation: cubeRotation 20s linear infinite alternate;
+    transform-style: preserve-3d;
+}
+  
+.welcome-content .homeCubeSkillsFaces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0.7;
+}
+  
+.welcome-content  .homeCubeSkillsFaces > img {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .welcome-content .homeCubeSkillsFace1 {
+    transform: translate3d(0, 0, 40px);
+  }
+  .welcome-content .homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translate3d(0, 0, 40px);
+  }
+  .welcome-content .homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 40px);
+  }
+  .welcome-content .homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translate3d(0, 0, 40px);
+  }
+  .welcome-content .homeCubeSkillsFace5 {
+    transform: rotateX(90deg) translate3d(0, 0, 40px);
+  }
+  .welcome-content .homeCubeSkillsFace6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 40px);
+  }
+  
+@keyframes cubeRotation {
+    to {
+      transform: rotateY(360deg) rotateX(480deg) rotateZ(720deg);
+    }
+}

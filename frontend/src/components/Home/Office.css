@@ -1,0 +1,158 @@
+/* office  bearer css */
+
+
+.homeOffice{
+    width: 100%;
+    min-height: 70vh;
+    font-family: sans-serif;
+    /* background: #1e1f22; */
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.homeOfficeCard{
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+    /* background: rgba(0, 0, 0, 0.7);  */
+    background: rgba(35,35,35,0.88);
+    perspective: 1000px;
+    margin: 20px;
+}
+.homeOfficeInnerBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.homeOfficeInnerBox:hover{
+    transform: rotateY(-180deg);
+}
+
+
+.homeOfficeCardFront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.homeOfficeCardBack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.homeOfficeCardBack{
+    transform: rotateY(180deg);
+}
+
+.homeOfficeCard h2{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    color: transparent;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 0.1px #fff;
+    background: url(../../assets/backtext.png);
+    background-color: #f87706;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 5s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 200px 0;
+    }
+}
+
+
+.homeOfficeProfile,.homeOfficeData{
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+
+.homeOfficeProfile p{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.user-img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.homeOfficeCardBack .homeOfficeData p{
+    margin-bottom: 20px;
+    color: #f87706;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.homeOfficeCardBack .homeOfficeData h3{
+    margin-bottom: 30px;
+}
+.homeOfficeCardBack .homeOfficeData .department{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+.homeOfficesocialImage{
+    padding-top: 20px;
+}
+
+
+
+.homeOfficesocialImage a{
+    position: relative;
+    display: inline;
+    margin-right: 17px;
+}
+
+.homeOfficesocialImage a .fa{
+    transition: scale 0.5s;
+    font-size: 20px;
+    color: white;
+}
+.homeOfficesocialImage a .facebook{
+    background: brown;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+.homeOfficesocialImage a .instagram{
+    background: brown;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+.homeOfficesocialImage a .fa:hover{
+    scale: 1.1;
+    background: darkred;
+}
+
+
+
+@media only screen and (max-width:700px){
+    .homeOfficecard{
+        flex-basis: 100%;
+    }
+}
