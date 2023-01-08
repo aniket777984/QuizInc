@@ -7,12 +7,14 @@ import SwiperSlider2 from "./SwiperSlider2";
 import Office from "./Office";
 import TimeLine from "../Strength/TimeLine";
 import Iframe from "react-iframe";
-import groupPic from "../../assets/groupPic.jpg";
 import Qcupdated from "../../assets/QCupdated.png";
 import Carousel from "react-material-ui-carousel";
-import bg1 from "../../assets/bg1f.jpg";
-// import bg2 from "../../assets/bg2.jpg";
-import bg3 from "../../assets/bg3.jpg";
+import about1 from "../../assets/about1.jpg";
+import about2 from "../../assets/about2.jpg";
+import about3 from "../../assets/about3.jpg";
+import about4 from "../../assets/about4.jpg";
+import about5 from "../../assets/about5.jpg";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -56,10 +58,11 @@ const Home = () => {
               </div>
               <div class="about-img" data-aos="flip-up">
                 <Carousel>
-                <img className="CarouselImage" src={bg1} alt="Aniket" />
-                <img className="CarouselImage" src={bg1} alt="Aniket" />
-                <img className="CarouselImage" src={groupPic} alt="Aniket" />
-                <img className="CarouselImage" src={bg3} alt="Aniket" />
+                <img className="CarouselImage" src={about1} alt="Aniket" />
+                <img className="CarouselImage" src={about2} alt="Aniket" />
+                <img className="CarouselImage" src={about3} alt="Aniket" />
+                <img className="CarouselImage" src={about4} alt="Aniket" />
+                <img className="CarouselImage" src={about5} alt="Aniket" />
                 </Carousel>
               </div>
             </div>
@@ -131,7 +134,7 @@ const Home = () => {
                 <div class="contact-link" data-aos="zoom-in">
                   <div class="mobile">
                     <i class="fa-solid fa-mobile-screen"></i>
-                    <h6>8789518214</h6>
+                    <h6>+91 98314 49219</h6>
                   </div>
                   <div class="mobile">
                     <i class="fa-solid fa-house"></i>

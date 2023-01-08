@@ -17,11 +17,20 @@
 }
 
 .strengthTimeline{
-    width: 80%;
+    width: 35%;
     height: auto;
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+}
+
+@media (max-width:700px){
+    .strengthTimeline{
+        width: 70%;
+    }
+    .strengthTimelineContainer{
+        min-height: 80vh;
+    }
 }
 
 .strengthTimeline ul{
@@ -32,7 +41,7 @@
     padding: 20px;
     background-color: #1e1f22;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 20px;
 }
 
@@ -42,11 +51,11 @@
 
 .timeline-content h1{
     font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-weight: 500;
+    /* margin-bottom: 20px; */
     color: #fff;
 }
-
+/* 
 .timeline-content p{
     font-size: 16px;
     font-weight: 300;
@@ -60,9 +69,9 @@
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 5s linear infinite;
-}
+} */
 
-.timeline-content .timelineptagright{
+/* .timeline-content .timelineptagright{
     color:transparent;
     -webkit-text-stroke: 0.2px #0095c2;
     background: url(../../assets/backtext.png);
@@ -70,7 +79,7 @@
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 5s linear infinite;
-}
+} */
 
 @media only screen and (min-width:760px){
     .strengthTimeline::before{

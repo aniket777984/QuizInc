@@ -54,8 +54,35 @@ const Office = () => {
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
             <div class="homeOfficeProfile">
-              <img src={ankit} class="user-img" alt="Aniket" />
+              <img src={Ridam} class="user-img" alt="Aniket" />
               {/* <img src={profile} class="user-img" alt="Aniket" /> */}
+              <h2>Ridam Hazra</h2>
+              <p>Secretary</p>
+            </div>
+          </div>
+          <div class="homeOfficeCardBack">
+            <div class="homeOfficeData">
+              <p>Contact Handles</p>
+              <h3>+91 9874490801</h3>
+              <div class="homeOfficesocialImage">
+              <a href="https://www.facebook.com/ridam.hazra">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="mailto:rhazra0602@gmail.com">
+                  <i class="fa fa-envelope instagram" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="homeOfficeCard" data-aos="zoom-in">
+        <div class="homeOfficeInnerBox" id="card">
+          <div class="homeOfficeCardFront">
+            <div class="homeOfficeProfile">
+              <img src={ankit} class="user-img" alt="Aniket" />
               <h2>Ankit Rai</h2>
               <p>Treasurer</p>
             </div>
@@ -76,6 +103,33 @@ const Office = () => {
           </div>
         </div>
       </div>
+
+      <div class="homeOfficeCard" data-aos="zoom-in">
+        <div class="homeOfficeInnerBox" id="card">
+          <div class="homeOfficeCardFront">
+            <div class="homeOfficeProfile">
+              <img src={souryatanu} class="user-img" alt="Aniket" />
+              <h2>Souryatanu Saha</h2>
+              <p>Vice President</p>
+            </div>
+          </div>
+          <div class="homeOfficeCardBack">
+            <div class="homeOfficeData">
+              <p>Contact Handles</p>
+              <h3>+91 86173 78994</h3>
+              <div class="homeOfficesocialImage">
+              <a href="https://www.facebook.com/sourya.shah.39">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="homeOfficeCard" data-aos="zoom-in">
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
@@ -102,85 +156,7 @@ const Office = () => {
           </div>
         </div>
       </div>
-      <div class="homeOfficeCard" data-aos="zoom-in">
-        <div class="homeOfficeInnerBox" id="card">
-          <div class="homeOfficeCardFront">
-            <div class="homeOfficeProfile">
-              <img src={Ridam} class="user-img" alt="Aniket" />
-              {/* <img src={profile} class="user-img" alt="Aniket" /> */}
-              <h2>Ridam Hazra</h2>
-              <p>General Secretary</p>
-            </div>
-          </div>
-          <div class="homeOfficeCardBack">
-            <div class="homeOfficeData">
-              <p>Contact Handles</p>
-              <h3>+91 9874490801</h3>
-              <div class="homeOfficesocialImage">
-              <a href="https://www.facebook.com/ridam.hazra">
-                  <i class="fa fa-facebook facebook" aria-hidden="true" />
-                </a>
-                <a href="mailto:rhazra0602@gmail.com">
-                  <i class="fa fa-envelope instagram" aria-hidden="true" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="homeOfficeCard" data-aos="zoom-in">
-        <div class="homeOfficeInnerBox" id="card">
-          <div class="homeOfficeCardFront">
-            <div class="homeOfficeProfile">
-              <img src={souryatanu} class="user-img" alt="Aniket" />
-              {/* <img src={profile} class="user-img" alt="Aniket" /> */}
-              <h2>Souryatanu Saha</h2>
-              <p>Vice President</p>
-            </div>
-          </div>
-          <div class="homeOfficeCardBack">
-            <div class="homeOfficeData">
-              <p>Contact Handles</p>
-              <h3>+91 9874490801</h3>
-              <div class="homeOfficesocialImage">
-              <a href="https://www.facebook.com/ridam.hazra">
-                  <i class="fa fa-facebook facebook" aria-hidden="true" />
-                </a>
-                <a href="mailto:rhazra0602@gmail.com">
-                  <i class="fa fa-envelope instagram" aria-hidden="true" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="homeOfficeCard" data-aos="zoom-in">
-        <div class="homeOfficeInnerBox" id="card">
-          <div class="homeOfficeCardFront">
-            <div class="homeOfficeProfile">
-              <img src={pratik} class="user-img" alt="Aniket" />
-              {/* <img src={profile} class="user-img" alt="Aniket" /> */}
-              <h2>Pratik Choudhary</h2>
-              <p>Asst. Gen. Secretary</p>
-            </div>
-          </div>
-          <div class="homeOfficeCardBack">
-            <div class="homeOfficeData">
-              <p>Contact Handles</p>
-              <h3>+91 9874490801</h3>
-              <div class="homeOfficesocialImage">
-              <a href="https://www.facebook.com/ridam.hazra">
-                  <i class="fa fa-facebook facebook" aria-hidden="true" />
-                </a>
-                <a href="mailto:rhazra0602@gmail.com">
-                  <i class="fa fa-envelope instagram" aria-hidden="true" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="homeOfficeCard" data-aos="zoom-in">
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
@@ -194,45 +170,76 @@ const Office = () => {
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 9874490801</h3>
+              <h3>+91 98830 40840</h3>
               <div class="homeOfficesocialImage">
-              <a href="https://www.facebook.com/ridam.hazra">
+              <a href="https://www.facebook.com/ArkaSeth5">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="mailto:rhazra0602@gmail.com">
-                  <i class="fa fa-envelope instagram" aria-hidden="true" />
+                <a href="#">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
+
+      
+      <div class="homeOfficeCard" data-aos="zoom-in">
+        <div class="homeOfficeInnerBox" id="card">
+          <div class="homeOfficeCardFront">
+            <div class="homeOfficeProfile">
+              <img src={pratik} class="user-img" alt="Aniket" />
+              {/* <img src={profile} class="user-img" alt="Aniket" /> */}
+              <h2>Pratik Choudhary</h2>
+              <p>Assistant Gen. Secretary</p>
+            </div>
+          </div>
+          <div class="homeOfficeCardBack">
+            <div class="homeOfficeData">
+              <p>Contact Handles</p>
+              <h3>+91 87877 50963</h3>
+              <div class="homeOfficesocialImage">
+              <a href="https://www.facebook.com/parkjimini69">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div class="homeOfficeCard" data-aos="zoom-in">
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
             <div class="homeOfficeProfile">
               <img src={vaishali} class="user-img" alt="Aniket" />
               {/* <img src={profile} class="user-img" alt="Aniket" /> */}
-              <h2>Vaishali Barun</h2>
+              <h2>Vaishali Barua</h2>
               <p>Sponsorship And Logistics Head</p>
             </div>
           </div>
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 9874490801</h3>
+              <h3>+91 89005 37156</h3>
               <div class="homeOfficesocialImage">
-              <a href="https://www.facebook.com/ridam.hazra">
+              <a href="#">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="mailto:rhazra0602@gmail.com">
-                  <i class="fa fa-envelope instagram" aria-hidden="true" />
+                <a href="#">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
       <div class="homeOfficeCard" data-aos="zoom-in">
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
@@ -246,13 +253,13 @@ const Office = () => {
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 9874490801</h3>
+              <h3>+91 89553 47033</h3>
               <div class="homeOfficesocialImage">
-              <a href="https://www.facebook.com/ridam.hazra">
+              <a href="https://www.facebook.com/anand.nagar.716533">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="mailto:rhazra0602@gmail.com">
-                  <i class="fa fa-envelope instagram" aria-hidden="true" />
+                <a href="#">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
             </div>

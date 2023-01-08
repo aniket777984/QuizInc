@@ -3,10 +3,8 @@ import React from "react";
 import india from "../../assets/sessional/india.png";
 import quoriosity from "../../assets/sessional/qriosity.png";
 import viral from "../../assets/sessional/viral.png";
-import news from "../../assets/sessional/newspaper.jpg";
 import frames from "../../assets/sessional/frames.png";
 import screencast from "../../assets/sessional/screencast.jpg";
-import flames from "../../assets/sessional/flames.jpg";
 
 
 
@@ -80,24 +78,10 @@ const SwiperSlider = ({title}) => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={news} alt="Aniket" />
-          <div className="slidercontentonhover">
-          <h1>Newspaper Quiz</h1>
-          <p>The Newspaper quiz judges all the participants’ ability to rummage through the Newspaper, read between the lines and outshine the others.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
           <img src={frames} alt="Aniket" />
           <div className="slidercontentonhover">                          
           <h1>Of 24 Frames and 22 Yards Quiz</h1>
           <p>Our latest addition to the array of events, this quiz is a special one for all the Bollywood and Cricket lovers out there.</p>                     
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={flames} alt="Aniket" />
-          <div className="slidercontentonhover">
-          <h1>F.L.A.M.E.S. Quiz</h1>
-          <p>Flames, a general quiz for all the arts, whether you’re an art or sports enthusiast, there is something for everyone in this quiz.</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>

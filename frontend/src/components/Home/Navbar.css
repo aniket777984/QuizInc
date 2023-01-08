@@ -201,7 +201,7 @@ nav .menu-btn i{
     display: none;
 }
 
-@media (max-width:700px){
+@media (max-width:770px){
     .back-video{
         right: -400px;
     }
@@ -210,6 +210,8 @@ nav .menu-btn i{
     }
     .content h4{
         font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     nav .menu-btn i{
         display: block;
@@ -222,7 +224,8 @@ nav .menu-btn i{
         position: fixed;
         top: 73px;
         left: -100%;
-        background: #111;
+        /* background: #111; */
+        background: #fff;
         height: 100vh;
         width: 100%;
         display: block;
@@ -237,10 +240,10 @@ nav .menu-btn i{
     }
     nav ul li a{
         font-size: 20px;
+        color: #444;
     }
     nav ul li a:hover{
-        color: cyan;
-        background: none;
+        background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
     }
 }
 

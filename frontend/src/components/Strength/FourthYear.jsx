@@ -9,7 +9,6 @@ import Ridam from "../../assets/Ridam.jpg";
 import saptaparna from "../../assets/saptaparna.jpg";
 import souryatanu from "../../assets/souryatanu.jpg";
 import vaishali from "../../assets/vaishali.jpg";
-import profile from "../../assets/profile.png";
 import StrengthNavbar from "./StrengthNavbar";
 import MetaData from "../layout/MetaData";
 
@@ -85,7 +84,7 @@ const FourthYear = () => {
             </div>
             <div class="fourthYearStrengthDetails">
               <h2>Ridam Hazra</h2>
-              <h4>General Secretary</h4>
+              <h4>Secretary</h4>
               <p>CSE</p>
               <h4>Contact Handles</h4>
               <p>+91 98744 90801</p>
@@ -105,7 +104,7 @@ const FourthYear = () => {
             </div>
             <div class="fourthYearStrengthDetails">
               <h2>Pratik Choudhary</h2>
-              <h4>Asst. Gen. Secretary</h4>
+              <h4>Assistant Secretary</h4>
               <p>CE</p>
               <h5>Contact Handles</h5>
               <p>+91 87877 50963</p>
@@ -161,7 +160,7 @@ const FourthYear = () => {
               {/* <img src={profile} alt="aniket" /> */}
             </div>
             <div class="fourthYearStrengthDetails">
-              <h2>Vaishali Barun</h2>
+              <h2>Vaishali Barua</h2>
               <h4>Sponsorship And Logistics Head</h4>
               <p>ECE</p>
               <h5>Contact Handles</h5>

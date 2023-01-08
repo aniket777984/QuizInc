@@ -56,7 +56,7 @@ const StrengthNavbar = ({ name }) => {
             <a href="/strength/fourth" id="menuLinkactual">Fourth</a>
           </li>
           <li className="alumini" id="menuLink">
-            <a href="/strength/alumini" id="menuLinkactual">Alumini</a>
+            <a href="/strength/alumini" id="menuLinkactual">Alumni</a>
           </li>
           <li className="home" id="menuLink">
             <a href="/" id="menuLinkactual">Home</a>

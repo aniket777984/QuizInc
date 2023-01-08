@@ -76,7 +76,7 @@
         position: fixed;
         top: 73px;
         left: -100%;
-        background: #111;
+        background: #fff;
         height: 100vh;
         width: 100%;
         display: block;
@@ -91,10 +91,10 @@
     }
     #aluminiNavbar ul li a{
         font-size: 20px;
+        color: #444;
     }
     #aluminiNavbar ul li a:hover{
-        color: cyan;
-        background: none;
+        background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
     }
 }
 

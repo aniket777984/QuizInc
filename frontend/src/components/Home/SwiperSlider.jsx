@@ -8,6 +8,8 @@ import Shatranj from "../../assets/Shatranj.jpeg";
 import Sports from "../../assets/Sports.jpeg";
 // import {Dialog,DialogActions,DialogContent,DialogTitle,Button} from "@material-ui/core";
 
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
