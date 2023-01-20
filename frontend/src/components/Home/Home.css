@@ -43,16 +43,11 @@
   padding: 30px;
   border-radius: 20px;
   /* background: rgba(0, 0, 0, 0.7); */
-  background: rgba(241, 108, 32, 0.9);
+  /* background: rgba(241, 108, 32, 0.9); */
+  background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
 }
 .about-text .abouttextmaintag{
-    color:transparent;
-    -webkit-text-stroke: 0.2px #0095c2;
-    background: url(../../assets/backtext.png);
-    background-color: rgb(43, 41, 41);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 5s linear infinite;
+    color:#fff;
 }
 
 .about-img{
@@ -134,7 +129,7 @@
   -webkit-text-stroke: 1px #fff;
   background: url(../../assets/backtext.png);
   -webkit-background-clip: text;
-  background-color: #e68027;;
+  background-color: #e68027;
   background-position: 0 0;
   animation: back 5s linear infinite;
   font-size: 50px;
@@ -158,15 +153,14 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 30px;
 }
 
 .itch-img{
   flex-basis: 30%;
-  animation: rotation 2s linear infinite alternate;
   transform-style: preserve-3d;
-  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .itch-img img{
@@ -180,8 +174,7 @@
   }
 }
 .itch-text{
-  flex-basis: 45%;
-  margin-left: 180px;
+  flex-basis: 85%;
   padding: 20px;
   border-radius: 20px;
 }
@@ -191,18 +184,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* .itch-text .quizzitchtextmaintag{
-    color:transparent;
-    -webkit-text-stroke: 0.2px #0095c2;
-    background: url(../../assets/backtext.png);
-    background-color: #0095c2;
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 5s linear infinite;
-} */
 
 .itch-text .quizzitchtextmaintag{
-  color: #0095c2;
+  color: #fff;
   font-size: 23px;
 }
 
@@ -220,7 +204,7 @@
   width: fit-content;
   border-radius: 5px;
   text-decoration: none;
-  background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
+  background: rgba(241, 108, 32, 0.9);
   animation: scaling5 1s infinite alternate;
 }
 
@@ -239,6 +223,7 @@
 
   .itch-img{
     margin-left: 0px;
+    width: 85%;
   }
   .itch-text{
     margin: 0px 10px;

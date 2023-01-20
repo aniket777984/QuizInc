@@ -173,23 +173,20 @@ const Home = () => {
               <div class="footer-row">
                 <div class="footer-col">
                   <div class="social-icon">
-                    <a href="#">
+                    <a href="https://www.facebook.com/search/top?q=quizinc">
                       <i class="fa fa-facebook"></i>
                     </a>
-                    <a href="#">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/quizincnitdgp/">
                       <i class="fa fa-instagram"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/company/quizinc/">
                       <i class="fa fa-linkedin"></i>
                     </a>
                   </div>
                   <br />
                 </div>
                 <div class="copyright">
-                  <h2>All rights reserved. Copyright © QuizInc 2022</h2>
+                  <h2>All rights reserved. Copyright © QuizInc 2023</h2>
                 </div>
               </div>
             </div>

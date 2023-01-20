@@ -6,6 +6,7 @@ import { useAlert } from "react-alert";
 import { useSelector, useDispatch } from "react-redux";
 import { login, clearErrors, register } from "../../actions/userAction";
 import logo from "../../assets/logo.png";
+import MetaData from "../layout/MetaData";
 
 const LoginSignUp = () => {
   const history = useHistory();
@@ -89,6 +90,7 @@ const LoginSignUp = () => {
         <Loader />
       ) : (
         <Fragment>
+          <MetaData title="Login" />
           <div class="logSigncontainer">
             <img src={logo} alt="quizinc" className="quizinclogo" />
             <div class="logSignCard">

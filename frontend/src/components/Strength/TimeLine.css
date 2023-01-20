@@ -39,7 +39,8 @@
 
 .strengthTimeline ul li{
     padding: 20px;
-    background-color: #1e1f22;
+    /* background-color: #1e1f22; */
+    background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
     color: white;
     border-radius: 5px;
     margin-bottom: 20px;

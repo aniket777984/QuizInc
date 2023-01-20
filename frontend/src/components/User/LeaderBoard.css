@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(../../assets/pixelBackground.png);
+    background: url(../../assets/portalBack.png);
     background-position: center;
     background-size: cover;
   }
@@ -32,7 +32,7 @@
 .leaderboard-container{
     width: 100%;
     height: 100vh;
-    background-image: url(../../assets/pixelBackground.png);
+    background: url(../../assets/portalBack.png) ;
     position: relative;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
     margin-top: 30px;
     position: relative;
     color: transparent;
-  -webkit-text-stroke: 1px #39ff14;
+  -webkit-text-stroke: 1px #fff;
   background: url(../../assets/backtext.png);
   -webkit-background-clip: text;
   background-position: 0 0;
@@ -75,7 +75,7 @@
     padding: 40px 35px;
     padding-top: 20px;
     margin: 45px 0;
-    /* border: 1px solid rgba(255,255,255,0.3); */
+    border: 1px solid rgba(255,255,255,0.3);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0,0,0,0.1);
     height: 85vh;
@@ -143,7 +143,7 @@ table{
 
 table thead{
     opacity: .8;
-    background-color: #39ff14;
+    background-color: #e68027;
     color: #fff;
     font-weight: 700;
     font-size: 20px;

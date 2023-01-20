@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import Loader from "../layout/Loader/Loader";
 
 import logo from "../../assets/logo.png";
+import MetaData from "../layout/MetaData";
 
 const EndPage = () => {
 
@@ -19,6 +20,7 @@ const EndPage = () => {
 
   return (
     <>
+    <MetaData title="QuizInc" />
       {loading == true ? (
         <Loader />
       ) : (

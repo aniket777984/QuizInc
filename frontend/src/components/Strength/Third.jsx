@@ -19,12 +19,11 @@ const Third = () => {
     <MetaData title="Third Year" />
       <StrengthNavbar name="third" />
       <div class="thirdYearStrengthContainer">
-        <h2 class="thirdYearStrength-title"></h2>
+        
         <div class="thirdYearStrengthMain">
           <div class="thirdYearStrengthCard">
             <div class="thirdYearStrengthImgBox">
               <img src={Durbar} alt="Aniket_Das" />
-              {/* <img src={profile} alt="Aniket_Das" /> */}
             </div>
             <div class="thirdYearStrengthMainContent">
               <h2>Durbar Chakrabarty</h2>
@@ -209,23 +208,20 @@ const Third = () => {
           <div class="footer-row">
             <div class="footer-col">
               <div class="social-icon">
-                <a href="#">
+                <a href="https://www.facebook.com/search/top?q=quizinc">
                   <i class="fa fa-facebook"></i>
                 </a>
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
+                <a href="https://www.instagram.com/quizincnitdgp/">
+                  <i class="fa fa-instagram"></i>
                 </a>
-                <a href="#">
-                  <i class="fa fa-pinterest"></i>
-                </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/company/quizinc/">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </div>
               <br />
             </div>
             <div class="copyright">
-              <h2>All rights reserved. Copyright © QuizInc 2022</h2>
+              <h2>All rights reserved. Copyright © QuizInc 2023</h2>
             </div>
           </div>
         </div>
