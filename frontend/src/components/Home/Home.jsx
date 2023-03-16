@@ -11,9 +11,13 @@ import Qcupdated from "../../assets/QCupdated.png";
 import Carousel from "react-material-ui-carousel";
 import about1 from "../../assets/about1.jpg";
 import about2 from "../../assets/about2.jpg";
-import about3 from "../../assets/about3.jpg";
-import about4 from "../../assets/about4.jpg";
-import about5 from "../../assets/about5.jpg";
+// import about3 from "../../assets/about3.jpg";
+// import about4 from "../../assets/about4.jpg";
+// import about5 from "../../assets/about5.jpg";
+import qcupdatedlogo from "../../assets/qcupdatedlogofinal.png";
+import photo1 from "../../assets/photo1.jpeg";
+import photo2 from "../../assets/photo2.jpeg";
+import photo3 from "../../assets/photo3.jpeg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -60,9 +64,9 @@ const Home = () => {
                 <Carousel>
                 <img className="CarouselImage" src={about1} alt="Aniket" />
                 <img className="CarouselImage" src={about2} alt="Aniket" />
-                <img className="CarouselImage" src={about3} alt="Aniket" />
-                <img className="CarouselImage" src={about4} alt="Aniket" />
-                <img className="CarouselImage" src={about5} alt="Aniket" />
+                <img className="CarouselImage" src={photo1} alt="Aniket" />
+                <img className="CarouselImage" src={photo2} alt="Aniket" />
+                <img className="CarouselImage" src={photo3} alt="Aniket" />
                 </Carousel>
               </div>
             </div>
@@ -73,7 +77,7 @@ const Home = () => {
             <h1 class="quizzitch-title" data-aos="fade-right">Quizzitch Cup</h1>
             <div className="itch-cup">
               <div class="itch-img" data-aos="fade-right">
-              <img src={Qcupdated} alt="aniket" />
+              <img src={qcupdatedlogo} alt="aniket" />
               </div>
                
               <div class="itch-text" data-aos="fade-left">

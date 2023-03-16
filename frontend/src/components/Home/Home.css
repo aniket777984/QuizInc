@@ -153,12 +153,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
 .itch-img{
-  flex-basis: 30%;
+  flex-basis: 25%;
   transform-style: preserve-3d;
   margin-bottom: 20px;
 }

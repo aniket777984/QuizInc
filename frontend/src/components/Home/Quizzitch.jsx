@@ -6,6 +6,12 @@ import iim from "../../assets/2IIM.png";
 import preBytes from "../../assets/prepbytes.png";
 import stock from "../../assets/Stockgro.jpeg";
 import skillvertex from "../../assets/Skillvertex.jpeg";
+
+import belgian from "../../assets/sponser/belgian.jpeg";
+import legends from "../../assets/sponser/legends.jpeg";
+import wonder from "../../assets/sponser/wonder.jpeg";
+import yhills from "../../assets/sponser/yhills.jpeg";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -26,16 +32,16 @@ const Quizzitch = () => {
                         <img src={geeks} alt="Face1" />
                     </div>
                     <div class="homeCubeSkillsFaces homeCubeSkillsFace2">
-                        <img src={booked} alt="Face2" />
+                        <img src={belgian} alt="Face2" />
                     </div>
                     <div class="homeCubeSkillsFaces homeCubeSkillsFace3">
-                        <img src={iim} alt="Face3" />
+                        <img src={legends} alt="Face3" />
                     </div>
                     <div class="homeCubeSkillsFaces homeCubeSkillsFace4">
-                        <img src={preBytes} alt="Face4" />
+                        <img src={wonder} alt="Face4" />
                     </div>
                     <div class="homeCubeSkillsFaces homeCubeSkillsFace5">
-                        <img src={stock} alt="Face5" />
+                        <img src={yhills} alt="Face5" />
                     </div>
                     <div class="homeCubeSkillsFaces homeCubeSkillsFace6">
                         <img src={skillvertex} alt="Face6" />
@@ -45,30 +51,35 @@ const Quizzitch = () => {
                 <div class="cubeShadow"></div>
 
                 <div className="homeskillsQuizBox" data-aos="fade-left">
-                <img className='homeskillBoximage' src={booked} alt="Face1" />
-                <img className='homeskillBoximage' src={iim} alt="Face1" />
-                <img className='homeskillBoximage' src={preBytes} alt="Face1" />
-                <img className='homeskillBoximage' src={stock} alt="Face1" />
-                <img className='homeskillBoximage' src={skillvertex} alt="Face1" />
+                <img className='homeskillBoximage' src={yhills} alt="Face1" />
+                <img className='homeskillBoximage' src={wonder} alt="Face1" />
+                <img className='homeskillBoximage' src={belgian} alt="Face1" />
+                <img className='homeskillBoximage' src={legends} alt="Face1" />
+                <img className='homeskillBoximage' src={geeks} alt="Face1" />
                 </div>
         
             </div>
             <div className="sponserdescription">
                 <div className="sponserinnertext">
                     <div className="sponserlistitem">
-                        <h3>Title Sponser</h3>
+                        <h3>Education Partner</h3>
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        <h2>Skill vertex</h2>
+                        <h2>YHills</h2>
                     </div>
                     <div className="sponserlistitemmiddle">
-                        <h3>Event Partner</h3>
+                        <h3>Refreshment Partner</h3>
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        <h2>Stock Grow</h2>
+                        <h2>Belgian Waffle</h2>
                     </div>
                     <div className="sponserlistitem">
-                        <h3>Edutainment Partner</h3>
+                        <h3>Food Partner</h3>
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        <h2>boooKD</h2>
+                        <h2>Wonders Cafe</h2>
+                    </div>
+                    <div className="sponserlistitemmiddle">
+                        <h3>Food Partner</h3>
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        <h2>The Legends</h2>
                     </div>
                 </div>
             </div>

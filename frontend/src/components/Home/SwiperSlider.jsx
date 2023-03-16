@@ -1,11 +1,18 @@
 import React,{useState} from "react";
 import {Link} from "react-router-dom";
-import biztech from '../../assets/Biztech.jpeg';
-import interNit from "../../assets/Inter-NIT.jpeg";
-import mela from "../../assets/MELA.jpeg";
-import school from "../../assets/School.jpeg";
-import Shatranj from "../../assets/Shatranj.jpeg";
-import Sports from "../../assets/Sports.jpeg";
+// import biztech from '../../assets/Biztech.jpeg';
+// import interNit from "../../assets/Inter-NIT.jpeg";
+// import mela from "../../assets/MELA.jpeg";
+// import school from "../../assets/School.jpeg";
+// import Shatranj from "../../assets/Shatranj.jpeg";
+// import Sports from "../../assets/Sports.jpeg";
+import bmep from "../../assets/events/bmep.jpg";
+import buisness from "../../assets/events/business.jpeg";
+import eventlist from "../../assets/events/eventlist.jpeg";
+import india from "../../assets/events/india.jpeg";
+import mela from "../../assets/events/mela.jpeg";
+import monopoly from "../../assets/events/monopoly.jpeg";
+import sports from "../../assets/events/sports.jpeg";
 // import {Dialog,DialogActions,DialogContent,DialogTitle,Button} from "@material-ui/core";
 
 
@@ -59,46 +66,49 @@ const SwiperSlider = ({title}) => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={biztech} alt="Aniket" />
+          <img src={sports} alt="Aniket" />
           <div className="slidercontentonhover">
-            <p>Exhibit your interests in the biggest entrepreneurial decisions to the latest technological advancements.</p>
+            {/* <p>Exhibit your interests in the biggest entrepreneurial decisions to the latest technological advancements.</p> */}
             <a href="#" className="submitReview">Register</a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={interNit} alt="Aniket" />
+          <img src={bmep} alt="Aniket" />
           <div className="slidercontentonhover">
-            <p>A battle among all the NITs across the country.</p>
+            {/* <p>A battle among all the NITs across the country.</p> */}
             <a href="#" className="submitReview">Register</a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={mela} alt="Aniket" />
           <div className="slidercontentonhover">
-            <p>MELA (Music, Entertainment, Literature and Arts), is an acronym all quizzers hold dear, from amateurs to virtuosos.</p>
+            {/* <p>MELA (Music, Entertainment, Literature and Arts), is an acronym all quizzers hold dear, from amateurs to virtuosos.</p> */}
             <a href="#" className="submitReview">Register</a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Sports} alt="Aniket" />
+          <img src={monopoly} alt="Aniket" />
           <div className="slidercontentonhover">
-            <p>One for the sports fanatics.</p>
+            {/* <p>One for the sports fanatics.</p> */}
             <a href="#" className="submitReview">Register</a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={school} alt="Aniket" />
+          <img src={india} alt="Aniket" />
           <div className="slidercontentonhover">
-            <p>Quizinc hosts inter-school quizzes for the schools of West Bengal.</p>
+            {/* <p>Quizinc hosts inter-school quizzes for the schools of West Bengal.</p> */}
             <a href="#" className="submitReview">Register</a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Shatranj} alt="Aniket" />
+          <img src={buisness} alt="Aniket" />
           <div className="slidercontentonhover">
-            <p>A quiz that considers the links between political power, geography, and cultural diversity.</p>
+            {/* <p>A quiz that considers the links between political power, geography, and cultural diversity.</p> */}
             <a href="https://quizinc.co.in/" className="submitReview">Register</a>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={eventlist} alt="Aniket" />
         </SwiperSlide>
       </Swiper>
 

@@ -4,7 +4,7 @@ import MetaData from "../layout/MetaData";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import Qc from "../../assets/QCupdated.png";
-// import ellipseDesing from "../../assets/ellipseDesign.png";
+import qcupdatedlogo from "../../assets/qcupdatedlogofinal.png";
 
 import Quizzitch from "./Quizzitch";
 import SwiperSlider from "./SwiperSlider";
@@ -73,7 +73,7 @@ const QuizzItchPage = () => {
             </h1>
           </div>
           <div className="quizzitchCupImage">
-            <img src={Qc} alt="aniket" />
+            <img src={qcupdatedlogo} alt="aniket" />
           </div>
         </div>
       </div>
