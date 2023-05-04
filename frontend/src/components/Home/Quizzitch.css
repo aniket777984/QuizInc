@@ -166,6 +166,7 @@
     bottom: -40px;
     left: -1px;
     width: 100%;
+    background: #fff;
   }
   .homeskillsQuizBox .homeskillBoximage{
     margin: 20px 10px;
@@ -178,8 +179,8 @@
   align-items: center;
   justify-content: center;
   /* background: rgba(0, 0, 0, 0.7); */
-  background: rgba(35,35,35,0.88);
-  padding-top: 40px;
+  background: #fff;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 .sponserdescription .sponserinnertext{

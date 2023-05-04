@@ -1,14 +1,14 @@
 import React from "react";
 import "./FouthYear.css";
-import anand from "../../assets/anand.jpeg";
-import ankit from "../../assets/ankit.jpeg";
-import arka from "../../assets/arka.jpg";
-import pranit from "../../assets/pranit.jpg";
-import pratik from "../../assets/pratik.jpg";
-import Ridam from "../../assets/Ridam.jpg";
-import saptaparna from "../../assets/saptaparna.jpg";
-import souryatanu from "../../assets/souryatanu.jpg";
-import vaishali from "../../assets/vaishali.jpg";
+import Arindam from "../../assets/Arindam.jpg";
+import Debasmita from "../../assets/Debasmita.jpg";
+import Drishita from "../../assets/Drishita.jpg";
+import Durbar from "../../assets/Durbar.jpg";
+import Kaushal from "../../assets/Kaushal.jpg";
+import Kushagra from "../../assets/Kushagra.jpg";
+import Prasun from "../../assets/Prasun.jpg";
+import Sagnik from "../../assets/Sagnik.jpg";
+import Shobhit from "../../assets/Shobhit.jpg";
 import StrengthNavbar from "./StrengthNavbar";
 import MetaData from "../layout/MetaData";
 
@@ -21,76 +21,72 @@ const FourthYear = () => {
         <div class="fourthYearStrengthContainer">
           <div class="fourthYearStrengthCard">
             <div class="fouthYearStrengthImgBox">
-              <img src={saptaparna} alt="aniket" />
-              {/* <img src={profile} alt="aniket" /> */}
+              <img src={Durbar} alt="aniket" />
             </div>
             <div class="fourthYearStrengthDetails">
-              <h2>Saptaparna Patra</h2>
+              <h2>Durbar Chakraborty</h2>
               <h4>President</h4>
+              <p>CSE</p>
+              <h4>Contact Handles</h4>
+              <p>+91 8670122218</p>
+                <a href="https://m.facebook.com/durbar.chakrabarty.7?ref=bookmarks">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="https://instagram.com/_durbar1204_?utm_medium=copy_link">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+            </div>
+          </div>
+          <div class="fourthYearStrengthCard">
+            <div class="fouthYearStrengthImgBox">
+              <img src={Prasun} alt="aniket" />
+            </div>
+            <div class="fourthYearStrengthDetails">
+              <h2>Prasun Kumar Das</h2>
+              <h4>Secretary</h4>
               <p>ME</p>
               <h4>Contact Handles</h4>
-              <p>+91 98314 49219</p>
-              <a href="https://www.facebook.com/saptaparna.patra.007">
+              <p>+91 6289762518</p>
+              <a href="https://www.facebook.com/prasun.kumardas.7311">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="#">
+                <a href="https://instagram.com/prasun_k_d?utm_medium=copy_link">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
             </div>
           </div>
           <div class="fourthYearStrengthCard">
             <div class="fouthYearStrengthImgBox">
-              <img src={souryatanu} alt="aniket" />
-              {/* <img src={profile} alt="aniket" /> */}
+              <img src={Kaushal} alt="aniket" />
             </div>
             <div class="fourthYearStrengthDetails">
-              <h2>Souryatanu Saha</h2>
+              <h2>Kaushal Baid</h2>
               <h4>Vice President</h4>
-              <p>MME</p>
+              <p>CSE</p>
               <h4>Contact Handles</h4>
-              <p>+91 86173 78994</p>
-              <a href="https://www.facebook.com/sourya.shah.39">
+              <p>+91 7044666331</p>
+              <a href="https://www.facebook.com/kaushalbaid16">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/kaushal168">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
             </div>
           </div>
           <div class="fourthYearStrengthCard">
             <div class="fouthYearStrengthImgBox">
-              <img src={ankit} alt="aniket" />
-              {/* <img src={profile} alt="aniket" /> */}
+              <img src={Shobhit} alt="aniket" />
             </div>
             <div class="fourthYearStrengthDetails">
-              <h2>Ankit Rai</h2>
+              <h2>Shobhit Katiyar</h2>
               <h4>Treasurer</h4>
               <p>MME</p>
               <h4>Contact Handles</h4>
-              <p>+91 87773 24733</p>
-              <a href="#">
+              <p>+91 6387385618</p>
+                <a href="https://www.facebook.com/shobhit.katiyar.167189">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="#">
-                  <i class="fa fa-instagram instagram" aria-hidden="true" />
-                </a>
-            </div>
-          </div>
-          <div class="fourthYearStrengthCard">
-            <div class="fouthYearStrengthImgBox">
-              <img src={Ridam} alt="aniket" />
-              {/* <img src={profile} alt="aniket" /> */}
-            </div>
-            <div class="fourthYearStrengthDetails">
-              <h2>Ridam Hazra</h2>
-              <h4>Secretary</h4>
-              <p>CSE</p>
-              <h4>Contact Handles</h4>
-              <p>+91 98744 90801</p>
-              <a href="https://www.facebook.com/ridam.hazra">
-                  <i class="fa fa-facebook facebook" aria-hidden="true" />
-                </a>
-                <a href="#">
+                <a href="https://www.instagram.com/kati_yar_shobhit/">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
             </div>
@@ -98,95 +94,90 @@ const FourthYear = () => {
           
           <div class="fourthYearStrengthCard">
             <div class="fouthYearStrengthImgBox">
-              <img src={pratik} alt="aniket" />
-              {/* <img src={profile} alt="aniket" /> */}
+              <img src={Kushagra} alt="aniket" />
             </div>
             <div class="fourthYearStrengthDetails">
-              <h2>Pratik Choudhary</h2>
-              <h4>Assistant Secretary</h4>
+              <h2>Kushagra Pratap Singh</h2>
+              <h4>Convener</h4>
+              <p>ME</p>
+              <h5>Contact Handles</h5>
+              <p>+91 9528682317</p>
+                <a href="https://www.facebook.com/people/Kushagra-Pratap-Singh/100055917695780/">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="https://www.instagram.com/kush_agra_pratap/?igshid=1ogfknpxidolu">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+            </div>
+          </div>
+          <div class="fourthYearStrengthCard">
+            <div class="fouthYearStrengthImgBox">
+              <img src={Sagnik} alt="aniket" />
+            </div>
+            <div class="fourthYearStrengthDetails">
+              <h2>Sagnik Khan</h2>
+              <h4>Joint Secretary</h4>
+              <p>MME</p>
+              <h5>Contact Handles</h5>
+              <p>+91 8420074884</p>
+                <a href="https://www.facebook.com/profile.php?id=100010971364639">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="https://instagram.com/sagniiiik?utm_medium=copy_link">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+            </div>
+          </div>
+          <div class="fourthYearStrengthCard">
+            <div class="fouthYearStrengthImgBox">
+              <img src={Drishita} alt="aniket" />
+            </div>
+            <div class="fourthYearStrengthDetails">
+              <h2>Drishita Nag</h2>
+              <h4>Sponsorship And Logistics Head</h4>
+              <p>ME</p>
+              <h5>Contact Handles</h5>
+              <p>+91 7797061920</p>
+                <a href="https://www.facebook.com/profile.php?id=100005992849461">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="https://instagram.com/drishita__?igshid=39cjpgpzs56h">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+            </div>
+          </div>
+          <div class="fourthYearStrengthCard">
+            <div class="fouthYearStrengthImgBox">
+              <img src={Debasmita} alt="aniket" />
+            </div>
+            <div class="fourthYearStrengthDetails">
+              <h2>Debasmita Das</h2>
+              <h4>PR Head</h4>
+              <p>EE</p>
+              <h5>Contact Handles</h5>
+              <p>+91 9883898007</p>
+                <a href="https://www.facebook.com/profile.php?id=100057522737824">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="https://instagram.com/debasmita.das__?utm_medium=copy_link">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+            </div>
+          </div>
+          <div class="fourthYearStrengthCard">
+            <div class="fouthYearStrengthImgBox">
+              <img src={Arindam} alt="aniket" />
+            </div>
+            <div class="fourthYearStrengthDetails">
+              <h2>Arindam Mandal</h2>
+              <h4></h4>
               <p>CE</p>
               <h5>Contact Handles</h5>
-              <p>+91 87877 50963</p>
-              <a href="https://www.facebook.com/parkjimini69">
+              <p>+91 7477776326</p>
+                <a href="https://www.facebook.com/arindam.mandal.77377">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="#">
-                  <i class="fa fa-instagram instagram" aria-hidden="true" />
-                </a>
-            </div>
-          </div>
-          <div class="fourthYearStrengthCard">
-            <div class="fouthYearStrengthImgBox">
-              <img src={pranit} alt="aniket" />
-              {/* <img src={profile} alt="aniket" /> */}
-            </div>
-            <div class="fourthYearStrengthDetails">
-              <h2>Pranit Pandey</h2>
-              <h4>Convenor</h4>
-              <p>CSE</p>
-              <h5>Contact Handles</h5>
-              <p>+91 86172 25347</p>
-              <a href="https://www.facebook.com/martinlouis.kingjuniorx.9">
-                  <i class="fa fa-facebook facebook" aria-hidden="true" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram instagram" aria-hidden="true" />
-                </a>
-            </div>
-          </div>
-          <div class="fourthYearStrengthCard">
-            <div class="fouthYearStrengthImgBox">
-              <img src={arka} alt="aniket" />
-              {/* <img src={profile} alt="aniket" /> */}
-            </div>
-            <div class="fourthYearStrengthDetails">
-              <h2>Arka Seth</h2>
-              <h4>Tech Head</h4>
-              <p>CSE</p>
-              <h5>Contact Handles</h5>
-              <p>+91 98830 40840</p>
-              <a href="https://www.facebook.com/ArkaSeth5">
-                  <i class="fa fa-facebook facebook" aria-hidden="true" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram instagram" aria-hidden="true" />
-                </a>
-            </div>
-          </div>
-          <div class="fourthYearStrengthCard">
-            <div class="fouthYearStrengthImgBox">
-              <img src={vaishali} alt="aniket" />
-              {/* <img src={profile} alt="aniket" /> */}
-            </div>
-            <div class="fourthYearStrengthDetails">
-              <h2>Vaishali Barua</h2>
-              <h4>Sponsorship And Logistics Head</h4>
-              <p>ECE</p>
-              <h5>Contact Handles</h5>
-              <p>+91 89005 37156</p>
-              <a href="#">
-                  <i class="fa fa-facebook facebook" aria-hidden="true" />
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram instagram" aria-hidden="true" />
-                </a>
-            </div>
-          </div>
-          <div class="fourthYearStrengthCard">
-            <div class="fouthYearStrengthImgBox">
-              <img src={anand} alt="aniket" />
-              {/* <img src={profile} alt="aniket" /> */}
-            </div>
-            <div class="fourthYearStrengthDetails">
-              <h2>Anand Nagar</h2>
-              <h4>Publicity Head</h4>
-              <p>CHE</p>
-              <h5>Contact Handles</h5>
-              <p>+91 89553 47033</p>
-              <a href="https://www.facebook.com/anand.nagar.716533">
-                  <i class="fa fa-facebook facebook" aria-hidden="true" />
-                </a>
-                <a href="#">
+                <a href="https://instagram.com/arindam_argon_007?utm_medium=copy_link">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
             </div>

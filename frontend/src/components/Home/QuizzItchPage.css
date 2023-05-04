@@ -162,7 +162,7 @@ nav.sticky{
    color: transparent;
   -webkit-text-stroke: 1px #fff;
   background: url(../../assets/backtext.png);
-  background-color: #0095c2;
+  background-color: #e68027;
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 5s linear infinite;
@@ -171,11 +171,6 @@ nav.sticky{
     color: #fff;
     -webkit-text-stroke: 1px #fff;
 }
-/* .quizzitchCupImage{
-    animation: rotation 2s linear infinite alternate;
-    transform-style: preserve-3d;
-} */
-
 .quizzitchCupImage img{
     width: 320px;
 }
@@ -202,4 +197,35 @@ nav.sticky{
     }
   } 
 
+.new-quizzitch-cup-title{
+    background: rgba(35,35,35,0.88);
+  }
+  
+  .quizitch-cup-quiz-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 70px;
+    position: relative;
+    line-height: 60px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../../assets/backtext.png);
+    -webkit-background-clip: text;
+    background-color: #e68027;
+    background-position: 0 0;
+    animation: back 5s linear infinite;
+    font-size: 60px;
+  }
 
+  @media (max-width:700px){
+    .quizitch-cup-quiz-title{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 0px;
+      text-align: center;
+      color :#e68027;
+      font-size: 30px;
+      -webkit-text-stroke: 1px #fff;
+    }
+  }

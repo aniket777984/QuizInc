@@ -46,8 +46,8 @@ const StrengthNavbar = ({ name }) => {
           <i class="fas fa-bars"></i>
         </label>
         <ul id="menu">
-          <li className="second" id="menuLink" >
-            <Link to="/strength/second" id="menuLinkactual">Second</Link>
+          <li className="first" id="menuLink" >
+            <a href="/strength/second" id="menuLinkactual">First</a>
           </li>
           <li className="third" id="menuLink" >
             <a href="/strength/third" id="menuLinkactual">Third</a>

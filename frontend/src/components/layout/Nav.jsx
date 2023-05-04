@@ -49,6 +49,9 @@ const Nav = () => {
           <i class="fas fa-bars"></i>
         </label>
         <ul id="menu">
+          <li className="2023" id="menuLink">
+            <a href="#2023" id="menuLinkactual">2023</a>
+          </li>
           <li className="2022" id="menuLink">
             <a href="#2022" id="menuLinkactual">2022</a>
           </li>

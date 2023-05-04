@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
   }
-  
 
   .container .swiper-slide {
     background-position: center;
@@ -28,54 +27,18 @@
        object-fit: cover;
   }
 
-  .container .swiper-slide .slidercontentonhover{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 30%;
-    left: 0%;
-    display: none;
-  }
-  .container .swiper-slide .slidercontentonhover p{
-    color: #fff;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 33px;
-  }
-  
-  .container .swiper-slide .submitReview{
-    color: #fff;
-    background: #e87613;
-    font-size: 20px;
-    padding: 10px 20px;
-    left: 32%;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    position: absolute;
-  }
 
   .container .swiper-slide:hover img{
     opacity: 0.6;
   }
 
-  .container .swiper-slide:hover .slidercontentonhover{
-    display: block;
-  }
-  
-
   .container {
     position: relative;
     width: 100%;
-    height: 60vh;
-    /* background-color :#1e1f22; */
+    height: 75vh;
     display: block;
-    margin-bottom: 25vh;
-    /* background: rgba(0, 0, 0, 0.7); */
-    background: rgba(35,35,35,0.88);
+    padding-top: 60px;
+    background: #fff;
   }
   
   .container .swiper-container {
@@ -90,65 +53,13 @@
   }
   
   @media (max-width: 768px) {
-  
-    .container{
-      margin-bottom: 20px;
-    }
-  
-  
     .container .swiper-container {
       bottom: -58vw;
       padding-bottom: 8vw;
     }
-  }
-  
-  .title_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-    padding-top: 30px;
-  }
-  
-  @media (max-width: 768px) {
-    .title_wrapper {
-      padding-top: 13vw;
+    .container{
+      height: 65vh;
     }
-  }
-  
-  .title_wrapper .reactLogo {
-    width: 130px;
-    margin-right: 30px;
-  }
-  
-  @media (max-width: 768px) {
-    .title_wrapper .reactLogo {
-      width: 130px;
-      margin-right: 10px;
-    }
-  }
-  
-  .title_wrapper .reactLogo img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  .title_wrapper .title_actualheadtag {
-    text-align: left;
-    font-size: 2vw;
-    color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    .title_wrapper .title_actualheadtag {
-      font-size: 7vw;
-    }
-  }
-  
-  .title_wrapper .title_ span {
-    display: block;
   }
   
   .swiper-pagination-fraction {

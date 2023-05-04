@@ -82,10 +82,11 @@ const QuizzItchPage = () => {
       
       <Quizzitch />
 
+      <div className="new-quizzitch-cup-title">
+        <h1 class="quizitch-cup-quiz-title">Quizzitch Cup Quizzes</h1>
+      </div>
 
-      <SwiperSlider title="Quizzitch Cup Events" />
-
-      <div className="spaceP"></div>
+      <SwiperSlider />
 
       <div class="footer">
             <div class="footer-container">

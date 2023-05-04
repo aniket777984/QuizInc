@@ -1,7 +1,5 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import "./Alumini.css";
-import profile from "../../assets/profile.png";
-import VanillaTilt from "vanilla-tilt";
 import Nav from "../layout/Nav";
 import devraj from "../../assets/alumini/2022/devraj.jpg";
 import ankan from "../../assets/alumini/2022/ankan.jpg";
@@ -77,34 +75,21 @@ import shashi from "../../assets/alumini/2014/shashi.jpg";
 import subhrangshu from "../../assets/alumini/2014/subhrangshu.jpg";
 import swami from "../../assets/alumini/2014/swami.jpg";
 
+
+import ankit2 from "../../assets/alumini/2023/ankit.jpeg";
+import pranit from "../../assets/alumini/2023/pranit.jpg";
+import Ridam from "../../assets/alumini/2023/Ridam.jpg";
+import souryatanu from "../../assets/alumini/2023/souryatanu.jpg";
+import anand from "../../assets/alumini/2023/anand.jpeg";
+import arka from "../../assets/alumini/2023/arka.jpg";
+import pratik from "../../assets/alumini/2023/pratik.jpg";
+import vaishali from "../../assets/alumini/2023/vaishali.jpg";
+import saptaparna from "../../assets/alumini/2023/saptaparna.jpg";
+
 import MetaData from "../layout/MetaData";
 
 const Alumini = () => {
-  const options = {
-    scale: 1,
-    speed: 1000,
-    max: 10,
-  };
-  const tilt = useRef(null);
-  const tilt2 = useRef(null);
-  const tilt3 = useRef(null);
-  const tilt4 = useRef(null);
-  const tilt5 = useRef(null);
-  const tilt6 = useRef(null);
-  const tilt7 = useRef(null);
-  const tilt8 = useRef(null);
 
-  useEffect(() => {
-    VanillaTilt.init(tilt.current, options);
-    VanillaTilt.init(tilt2.current, options);
-    VanillaTilt.init(tilt3.current, options);
-    VanillaTilt.init(tilt4.current, options);
-    VanillaTilt.init(tilt5.current, options);
-    VanillaTilt.init(tilt6.current, options);
-    VanillaTilt.init(tilt7.current, options);
-    VanillaTilt.init(tilt8.current, options);
-    // eslint-disable-next-line
-  }, []);
 
   return (
     <>
@@ -112,11 +97,81 @@ const Alumini = () => {
       <Nav />
       <div className="aluminisectionhighesttag">
       <div className="spaceProviderForAluminifirstsection"></div>
+      <section id="2023">
+        <div class="aluminiStrengthContainerwhite">
+          <h1 class="alumini-title">Class of 2023</h1>
+          <div class="aluminiStrengthBasketwhite">
+            <div class="aluminiStrengthCard" >
+              <div class="aluminiStrengthContent">
+                <img src={saptaparna} alt="aniket" />
+                <h3>Saptaparna Patra</h3>
+                <h4>Mechanical Engineering</h4>
+              </div>
+            </div>
+            <div class="aluminiStrengthCard" >
+              <div class="aluminiStrengthContent">
+                <img src={souryatanu} alt="aniket" />
+                <h3>Souryatanu Saha</h3>
+                <h4>Material and Metallurjy Enginnering</h4>
+              </div>
+            </div>
+            <div class="aluminiStrengthCard">
+              <div class="aluminiStrengthContent">
+                <img src={ankit2} alt="aniket" />
+                <h3>Ankit Rai</h3>
+                <h4>Material and Metallurjy Enginnering</h4>
+              </div>
+            </div>
+            <div class="aluminiStrengthCard">
+              <div class="aluminiStrengthContent">
+                <img src={Ridam} alt="aniket" />
+                <h3>Ridam Hazra</h3>
+                <h4>Computer Science and Engineering</h4>
+              </div>
+            </div>
+            <div class="aluminiStrengthCard" >
+              <div class="aluminiStrengthContent">
+                <img src={pratik} alt="aniket" />
+                <h3>Pratik Choudhary</h3>
+                <h4>Civil Engineering</h4>
+              </div>
+            </div>
+            <div class="aluminiStrengthCard" >
+              <div class="aluminiStrengthContent">
+                <img src={pranit} alt="aniket" />
+                <h3>Pranit Pandey</h3>
+                <h4>Computer Science and Engineering</h4>
+              </div>
+            </div>
+            <div class="aluminiStrengthCard" >
+              <div class="aluminiStrengthContent">
+                <img src={arka} alt="aniket" />
+                <h3>Arka Seth</h3>
+                <h4>Computer Science and Engineering</h4>
+              </div>
+            </div>
+            <div class="aluminiStrengthCard" >
+              <div class="aluminiStrengthContent">
+                <img src={vaishali} alt="aniket" />
+                <h3>Vaishali Barua</h3>
+                <h4>Electronics and Communication Engineering</h4>
+              </div>
+            </div>
+            <div class="aluminiStrengthCard" >
+              <div class="aluminiStrengthContent">
+                <img src={anand} alt="aniket" />
+                <h3>Anand Nagar</h3>
+                <h4>Chemical Engineering</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="2022">
         <div class="aluminiStrengthContainer">
           <h1 class="alumini-title">Class of 2022</h1>
           <div class="aluminiStrengthBasket">
-            <div class="aluminiStrengthCard" ref={tilt} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={devraj} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -124,7 +179,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt2} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={yathansh} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -132,7 +187,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt3} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={vraj} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -140,7 +195,7 @@ const Alumini = () => {
                 <h4>Mechanical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt4} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={srijeeta} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -148,7 +203,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt5} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={ankan} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -156,7 +211,7 @@ const Alumini = () => {
                 <h4>Mechanical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt6} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={sam} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -164,7 +219,7 @@ const Alumini = () => {
                 <h4>Electronics and Communication Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt7} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={jintu} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -179,7 +234,7 @@ const Alumini = () => {
         <div class="aluminiStrengthContainerwhite">
           <h1 class="alumini-title">Class of 2021</h1>
           <div class="aluminiStrengthBasketwhite">
-            <div class="aluminiStrengthCard" ref={tilt} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={hemant} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -187,7 +242,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt2} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={baidik} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -195,7 +250,7 @@ const Alumini = () => {
                 <h4>Information Technology</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt3} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={abishek} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -203,7 +258,7 @@ const Alumini = () => {
                 <h4>Civil Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt4} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={richik} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -211,7 +266,7 @@ const Alumini = () => {
                 <h4>Mechanical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt5} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={soumya} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -219,7 +274,7 @@ const Alumini = () => {
                 <h4>Electronics and Communication Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt6} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={akhil} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -227,7 +282,7 @@ const Alumini = () => {
                 <h4>Chemical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt7} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={deap} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -235,7 +290,7 @@ const Alumini = () => {
                 <h4>Electrical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={subhradeep} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -243,7 +298,7 @@ const Alumini = () => {
                 <h4></h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={sannidhya} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -251,7 +306,7 @@ const Alumini = () => {
                 <h4>Chemical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={rijwan} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -259,7 +314,7 @@ const Alumini = () => {
                 <h4>Chemical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={kumar} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -267,7 +322,7 @@ const Alumini = () => {
                 <h4>Mechanical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={anu} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -282,7 +337,7 @@ const Alumini = () => {
         <div class="aluminiStrengthContainer">
           <h1 class="alumini-title">Class of 2020</h1>
           <div class="aluminiStrengthBasket">
-            <div class="aluminiStrengthCard" ref={tilt} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={sarnava} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -290,7 +345,7 @@ const Alumini = () => {
                 <h4>Electronics and Communication Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt2} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={sourav} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -298,7 +353,7 @@ const Alumini = () => {
                 <h4>Information Technology</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt3} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={ronojit} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -306,7 +361,7 @@ const Alumini = () => {
                 <h4>Electronics and Communication Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt4} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={adrija} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -314,7 +369,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt5} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={souman} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -322,7 +377,7 @@ const Alumini = () => {
                 <h4>Mechanical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt6} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={rahul} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -330,7 +385,7 @@ const Alumini = () => {
                 <h4>Mechanical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt7} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={debojyoti} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -338,7 +393,7 @@ const Alumini = () => {
                 <h4>Material and Metallurjy Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={rishi} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -346,7 +401,7 @@ const Alumini = () => {
                 <h4>Mechanical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={ahona} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -361,7 +416,7 @@ const Alumini = () => {
         <div class="aluminiStrengthContainerwhite">
           <h1 class="alumini-title">Class of 2019</h1>
           <div class="aluminiStrengthBasketwhite">
-            <div class="aluminiStrengthCard" ref={tilt} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={rohith} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -369,7 +424,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt2} {...options}>
+            <div class="aluminiStrengthCard" >
               <div class="aluminiStrengthContent">
                 <img src={mayukh} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -377,7 +432,7 @@ const Alumini = () => {
                 <h4>Information Technology</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt3} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={sudeshna} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -385,7 +440,7 @@ const Alumini = () => {
                 <h4>Electronics and Communication Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt4} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={ujani} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -393,7 +448,7 @@ const Alumini = () => {
                 <h4>Biotechnolgy</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt5} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={arnav} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -401,7 +456,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt6} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={gaurav} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -409,7 +464,7 @@ const Alumini = () => {
                 <h4>Mechanical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt7} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={abhishek} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -417,7 +472,7 @@ const Alumini = () => {
                 <h4>Electrical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={paramartha} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -425,7 +480,7 @@ const Alumini = () => {
                 <h4>Chemical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={melonica} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -440,7 +495,7 @@ const Alumini = () => {
         <div class="aluminiStrengthContainer">
           <h1 class="alumini-title">Class of 2018</h1>
           <div class="aluminiStrengthBasket">
-            <div class="aluminiStrengthCard" ref={tilt} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={surjo} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -448,7 +503,7 @@ const Alumini = () => {
                 <h4>Electronics and Communication Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt2} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={arijit} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -456,7 +511,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt3} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={shramana} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -464,7 +519,7 @@ const Alumini = () => {
                 <h4>Information Technology</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt4} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={annyesha} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -472,7 +527,7 @@ const Alumini = () => {
                 <h4>Chemical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt5} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={satadal} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -480,7 +535,7 @@ const Alumini = () => {
                 <h4>Electrical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt6} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={priyam} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -488,7 +543,7 @@ const Alumini = () => {
                 <h4>Civil Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt7} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={pavitra} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -496,7 +551,7 @@ const Alumini = () => {
                 <h4>Biotechnolgy</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={dipankar} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -511,7 +566,7 @@ const Alumini = () => {
         <div class="aluminiStrengthContainerwhite">
           <h1 class="alumini-title">Class of 2017</h1>
           <div class="aluminiStrengthBasketwhite">
-            <div class="aluminiStrengthCard" ref={tilt} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={pratim} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -519,7 +574,7 @@ const Alumini = () => {
                 <h4>Infomation Technology</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt2} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={manoj} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -527,7 +582,7 @@ const Alumini = () => {
                 <h4>Chemical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt3} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={preeti} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -535,7 +590,7 @@ const Alumini = () => {
                 <h4>Mechanical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt4} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={ankur} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -543,7 +598,7 @@ const Alumini = () => {
                 <h4>Materials and Metallurgy Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt5} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={anjali} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -551,7 +606,7 @@ const Alumini = () => {
                 <h4>Electrical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt6} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={sid} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -566,7 +621,7 @@ const Alumini = () => {
         <div class="aluminiStrengthContainer">
           <h1 class="alumini-title">Class of 2016</h1>
           <div class="aluminiStrengthBasket">
-            <div class="aluminiStrengthCard" ref={tilt} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={kaustuva} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -574,7 +629,7 @@ const Alumini = () => {
                 <h4>Information Technolgy</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt2} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={sankarshan} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -582,7 +637,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt3} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={ankit} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -590,7 +645,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt4} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={vishal} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -598,7 +653,7 @@ const Alumini = () => {
                 <h4>Electrical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt5} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={soumyaa} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -613,7 +668,7 @@ const Alumini = () => {
         <div class="aluminiStrengthContainerwhite">
           <h1 class="alumini-title">Class of 2015</h1>
           <div class="aluminiStrengthBasketwhite">
-            <div class="aluminiStrengthCard" ref={tilt} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={ajay} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -621,7 +676,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt2} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={atreyee} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -629,7 +684,7 @@ const Alumini = () => {
                 <h4>Electrical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt3} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={avinav} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -637,7 +692,7 @@ const Alumini = () => {
                 <h4>Civil Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt4} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={harshit} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -645,7 +700,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt5} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={samya} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -653,7 +708,7 @@ const Alumini = () => {
                 <h4>Mechanical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt6} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={rana} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -661,7 +716,7 @@ const Alumini = () => {
                 <h4>Mechanical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt7} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={shakeel} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -669,7 +724,7 @@ const Alumini = () => {
                 <h4>Mechanical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={shubham} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -684,7 +739,7 @@ const Alumini = () => {
         <div class="aluminiStrengthContainer">
           <h1 class="alumini-title">Class of 2014</h1>
           <div class="aluminiStrengthBasket">
-            <div class="aluminiStrengthCard" ref={tilt} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={aaghran} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -692,7 +747,7 @@ const Alumini = () => {
                 <h4>Information Technology</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt2} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={adil} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -700,7 +755,7 @@ const Alumini = () => {
                 <h4>Electrical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt3} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={garima} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -708,7 +763,7 @@ const Alumini = () => {
                 <h4>Mechanical Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt4} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={kartikeya} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -716,7 +771,7 @@ const Alumini = () => {
                 <h4>Computer Science and Engineering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt5} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={shashi} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -724,7 +779,7 @@ const Alumini = () => {
                 <h4>Mechanical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt6} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={subhrangshu} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -732,7 +787,7 @@ const Alumini = () => {
                 <h4>Mechanical Enginnering</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt7} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={swami} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}
@@ -740,7 +795,7 @@ const Alumini = () => {
                 <h4>Information Technology</h4>
               </div>
             </div>
-            <div class="aluminiStrengthCard" ref={tilt8} {...options}>
+            <div class="aluminiStrengthCard">
               <div class="aluminiStrengthContent">
                 <img src={sayan} alt="aniket" />
                 {/* <img src={profile} alt="aniket" /> */}

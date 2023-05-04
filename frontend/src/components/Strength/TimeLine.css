@@ -5,12 +5,13 @@
     font-family: sans-serif;
 }
 .strengthTimelineContainer{
-    min-height: 100vh;
+    min-height: 60vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding-bottom: 80px;
+    padding-top: 40px;
 }
 .timelinelinksforstrength{
     text-decoration: none;
@@ -29,7 +30,13 @@
         width: 70%;
     }
     .strengthTimelineContainer{
-        min-height: 80vh;
+        min-height: 60vh;
+    }
+    .timeline-content{
+        padding: 2px 5px;
+    }
+    .strengthTimeline{
+        width: 85%;
     }
 }
 
@@ -38,8 +45,7 @@
 }
 
 .strengthTimeline ul li{
-    padding: 20px;
-    /* background-color: #1e1f22; */
+    padding: 10px;
     background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
     color: white;
     border-radius: 5px;
@@ -50,104 +56,24 @@
     margin-bottom: 0;
 }
 
+.timeline-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 20px;
+}
+
 .timeline-content h1{
     font-size: 25px;
     font-weight: 500;
-    /* margin-bottom: 20px; */
     color: #fff;
 }
-/* 
-.timeline-content p{
-    font-size: 16px;
-    font-weight: 300;
+
+.timeline-year-logo{
+    width: 50px;
 }
-
-.timeline-content .timelineptagleft{
-    color:transparent;
-    -webkit-text-stroke: 0.2px #0095c2;
-    background: url(../../assets/backtext.png);
-    background-color: #0095c2;
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 5s linear infinite;
-} */
-
-/* .timeline-content .timelineptagright{
-    color:transparent;
-    -webkit-text-stroke: 0.2px #0095c2;
-    background: url(../../assets/backtext.png);
-    background-color: #e68027;
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 5s linear infinite;
-} */
-
-@media only screen and (min-width:760px){
-    .strengthTimeline::before{
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 2px;
-        background-color: gray;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .strengthTimeline ul li{
-        width: 50%;
-        margin-bottom: 50px;
-        position: relative;
-    }
-    .strengthTimeline ul li:nth-child(odd){
-        float: left;
-        clear: right;
-        transform: translateX(-40px);
-        border-radius: 20px 0px 20px 20px;
-    }
-    .strengthTimeline ul li:nth-child(even){
-        float: right;
-        clear: left;
-        transform: translateX(40px);
-        border-radius: 0px 20px 20px 20px;
-    }
-    .strengthTimeline ul li::after{
-        content: '';
-        position: absolute;
-        height: 60px;
-        width: 60px;
-        background-color: #fff;
-        border-radius: 50%;
-        top: 0;
-        transition: scale 0.5s;
-    }
-    .strengthTimeline ul .second-year::after{
-        background-image: url(../../assets/2nd.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    .strengthTimeline ul .third-year::after{
-        background-image: url(../../assets/3rd.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    .strengthTimeline ul .fourth-year::after{
-        background-image: url(../../assets/4th.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    .strengthTimeline ul .alumini-section::after{
-        background-image: url(../../assets/alumni.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    .strengthTimeline ul li:nth-child(odd)::after{
-        transform: translate(50%,-50%);
-        right: -40px;
-    }
-    .strengthTimeline ul li:nth-child(even)::after{
-        transform: translate(-50%,-50%);
-        left: -40px;
-    }
-    .strengthTimeline ul li:hover:after{
-        scale:1.1;
-    }
+.timeline-year-logo img{
+    width: 100%;
+    border-radius: 50%;
 }

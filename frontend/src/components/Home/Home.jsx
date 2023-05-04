@@ -7,13 +7,10 @@ import SwiperSlider2 from "./SwiperSlider2";
 import Office from "./Office";
 import TimeLine from "../Strength/TimeLine";
 import Iframe from "react-iframe";
-import Qcupdated from "../../assets/QCupdated.png";
+// import Qcupdated from "../../assets/QCupdated.png";
 import Carousel from "react-material-ui-carousel";
 import about1 from "../../assets/about1.jpg";
 import about2 from "../../assets/about2.jpg";
-// import about3 from "../../assets/about3.jpg";
-// import about4 from "../../assets/about4.jpg";
-// import about5 from "../../assets/about5.jpg";
 import qcupdatedlogo from "../../assets/qcupdatedlogofinal.png";
 import photo1 from "../../assets/photo1.jpeg";
 import photo2 from "../../assets/photo2.jpeg";
@@ -73,42 +70,47 @@ const Home = () => {
           </section>
 
           <section id="quizzitch">
-            <div className="cup2022">
-            <h1 class="quizzitch-title" data-aos="fade-right">Quizzitch Cup</h1>
-            <div className="itch-cup">
-              <div class="itch-img" data-aos="fade-right">
-              <img src={qcupdatedlogo} alt="aniket" />
-              </div>
-               
-              <div class="itch-text" data-aos="fade-left">
-                <p className="quizzitchtextmaintag">
-                  While QuizInc organizes quizzes all year, all of them
-                  culminate into this huge extravaganza of quizzing, knowledge
-                  and a healthy dose (read: overdose) of fun! With the advent of
-                  the new decade, we are absolutely pumped about the first big
-                  event of 2021: Quizzitch Cup! A festival full of relentless
-                  information, knowledge and fun, Quizzitch Cup 2021 is a
-                  celebration of an activity we all love: quizzing. With a huge
-                  array of quizzes lined up to be hosted by QuizInc and attended
-                  by schools and colleges from all over the Eastern region of
-                  India, it just doesn't get any better!
-                </p>
-              </div>
+            <div className="new-quizzitch">
+            <h1 class="quizzitch-title">Quizzitch Cup</h1>
             </div>
-            <div className="exploremorewrapper">
-              <a className="quizzitchPageLink" href="/quizzitchcup" >
-                <h3>Explore More</h3>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </a>
+
+            <div className="cup2022">
+              <div className="itch-cup">
+                <div class="itch-img" data-aos="fade-right">
+                  <img src={qcupdatedlogo} alt="aniket" />
+                </div>
+               
+                <div class="itch-text" data-aos="fade-left">
+                  <p className="quizzitchtextmaintag">
+                    While QuizInc organizes quizzes all year, all of them
+                    culminate into this huge extravaganza of quizzing, knowledge
+                    and a healthy dose (read: overdose) of fun! With the advent of
+                    the new decade, we are absolutely pumped about the first big
+                    event of 2023: Quizzitch Cup! A festival full of relentless
+                    information, knowledge and fun, Quizzitch Cup 2023 is a
+                    celebration of an activity we all love: quizzing. With a huge
+                    array of quizzes lined up to be hosted by QuizInc and attended
+                    by schools and colleges from all over the Eastern region of
+                    India, it just doesn't get any better!
+                  </p>
+                </div>
+              </div>
+              <div className="exploremorewrapper">
+                <a className="quizzitchPageLink" href="/quizzitchcup" >
+                  <h3>Explore More</h3>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </section>
 
 
           <section id="office">
+            <div className="new-office-title">
+              <h1 class="officeBearer-title">Office Bearers</h1>
+            </div>
 
             <div className="officesection">
-              <h1 class="officeBearer-title" data-aos="fade-right">Office Bearers</h1>
               <Office />
             </div>
 
@@ -117,17 +119,15 @@ const Home = () => {
               <TimeLine />
             </div>
 
-            <div className="swiperpart">
-            <SwiperSlider2 title="Sessional Quizzes" />
+            <div className="new-session-title">
+              <h1 class="session-quiz-title">Sessional Quizzes</h1>
             </div>
 
-          </section>
+            <div className="swiperpart">
+            <SwiperSlider2 />
+            </div>
 
-          {/* <section id="session">
-            
-          </section> */}
-
-          <div className="spaceP"></div>
+          </section>          
 
           <section id="contact">
             <div className="getInTouchTitle">
@@ -138,7 +138,7 @@ const Home = () => {
                 <div class="contact-link" data-aos="zoom-in">
                   <div class="mobile">
                     <i class="fa-solid fa-mobile-screen"></i>
-                    <h6>+91 98314 49219</h6>
+                    <h6>+91 8670122218</h6>
                   </div>
                   <div class="mobile">
                     <i class="fa-solid fa-house"></i>

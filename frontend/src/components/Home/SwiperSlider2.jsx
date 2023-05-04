@@ -20,24 +20,15 @@ import SwiperCore, {
 
 //Always write this important at last
 import "./SwiperSlider2.css";
-import logo from "../../assets/logo.png";
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
-const SwiperSlider = ({title}) => {
+const SwiperSlider = () => {
 
 
 
   return (
     <div className="swiperSlidercontainer">
-      <div className="title_wrapper">
-        <div className="reactLogo">
-          <img src={logo} alt="Aniket"/>
-        </div>
-        <div className="title_">
-        <h4 className="title_actual" >{title}</h4>
-        </div>
-      </div>
       <Swiper
         navigation={true}
         effect={"coverflow"}

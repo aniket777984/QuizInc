@@ -1,5 +1,4 @@
 
-
 .mainContentbox{
   background: url(../../assets/team_bg.jpg);
   background-attachment: fixed;
@@ -7,8 +6,21 @@
   background-size: cover;
   overflow-x: hidden;
 }
-
-
+.spacefor{
+  height: 5vh;
+}
+.spaceProvider{
+  height: 1vh;
+}
+.spacePr{
+  height: 10vh;
+}
+.spaceProv{
+  height: 20vh;
+}
+.spaceP{
+  height: 10vh;
+}
 
 /* About Us css section */
 
@@ -16,7 +28,6 @@
   background: #fff;
   padding-bottom: 80px;
 }
-
 .about-title{
   padding-top: 60px;
   text-align: center;
@@ -26,10 +37,8 @@
   font-size: 50px;
 }
 
-
 .about-us{
   padding-top: 30px;
-  /* margin-bottom: 80px; */
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -39,13 +48,11 @@
 .about-text{
   flex-basis: 48%;
   margin-right: 70px;
-  /* background-color: #1e1f22; */
   padding: 30px;
   border-radius: 20px;
-  /* background: rgba(0, 0, 0, 0.7); */
-  /* background: rgba(241, 108, 32, 0.9); */
   background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
 }
+
 .about-text .abouttextmaintag{
     color:#fff;
 }
@@ -80,7 +87,6 @@
   }
   .about-img{
     flex-basis: 100%;
-    
     margin: 10px;
   }
 
@@ -93,36 +99,22 @@
   }
 }
 
-.spacefor{
-  height: 5vh;
-}
-
-.spaceProvider{
-  height: 1vh;
-}
-
-.spacePr{
-  height: 10vh;
-}
-.spaceProv{
-  height: 20vh;
-}
-
-.spaceP{
-  height: 10vh;
-}
-
 
 /* QuizziTch cup section */
-.cup2022{
-  /* background: rgba(0, 0, 0, 0.7); */
-  background: rgba(35,35,35,0.88);
+.cup2022
+{
+  /* background: rgba(35,35,35,0.88); */
+  background: #fff;
   padding-bottom: 60px;
 }
-
+.new-quizzitch{
+  background: rgba(35,35,35,0.88);
+}
 .quizzitch-title{
-  padding-top: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
+  padding-left: 70px;
   position: relative;
   line-height: 60px;
   color: transparent;
@@ -132,56 +124,38 @@
   background-color: #e68027;
   background-position: 0 0;
   animation: back 5s linear infinite;
-  font-size: 50px;
-}
-.quizzitch-title:after{
-  content: '';
-  background: #fff;
-  width: 150px;
-  height: 5px;
-  border: 5px;
-  border-radius: 10px;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+  font-size: 60px;
 }
 
 .itch-cup{
-  width: 100%;
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
 }
 
 .itch-img{
-  flex-basis: 25%;
-  transform-style: preserve-3d;
-  margin-bottom: 20px;
-}
-
-.itch-img img{
-  width: 90%;
-}
-
-
-@keyframes rotation {
-  to {
-    transform:rotateY(180deg);
-  }
-}
-.itch-text{
-  flex-basis: 85%;
-  padding: 20px;
+  flex-basis: 38%;
+  margin-left: 30px;
+  border-top: 2px solid #fff;
   border-radius: 20px;
 }
+.itch-img img{
+  width: 85%;
+}
+
+.itch-text{
+  flex-basis: 48%;
+  margin-left: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
+}
+
 .itch-text p{
-  padding-bottom: 20px;
-  font-size: 22px;
-  -webkit-text-size-adjust: 100%;
+  color: #fff;
+  text-align: center;
 }
 
 
@@ -193,7 +167,9 @@
 .exploremorewrapper{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 90px;
+  margin-top: 0px;
 }
 
 .exploremorewrapper .quizzitchPageLink{
@@ -220,69 +196,93 @@
 
 
 @media (max-width:700px){
-
-  .itch-img{
-    margin-left: 0px;
-    width: 85%;
-  }
-  .itch-text{
-    margin: 0px 10px;
-    margin-bottom: 40px;
-  }
   .itch-cup{
     flex-direction: column;
   }
+  .itch-img{
+    margin-right: 0px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .itch-img img{
+    width: 100%;
+  }
+  .itch-text{
+    flex-basis: 100%;
+    margin: 15px;
+  }
+  .exploremorewrapper{
+    justify-content: center;
+    padding-right: 0px;
+    margin-top: 20px;
+  }
   .quizzitch-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
     text-align: center;
-    position: relative;
-    line-height: 60px;
-    /* color: #555; */
-    color :#e68027;;
+    color :#e68027;
     font-size: 40px;
     -webkit-text-stroke: 1px #fff;
-  }
-  .quizzitch-title:after{
-    content: '';
-    background: #fff;
-    width: 110px;
-    height: 5px;
-    border: 5px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 
 
 /* Office section */
-.officesection{
-   background: #fff;
-   padding-bottom: 40px;
+
+.new-office-title{
+  background-color: #fff;
 }
 
-
 .officeBearer-title{
-  padding-top: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
-  color :#444;
-  font-size: 40px;
-  margin-bottom: 40px;
+  position: relative;
+  line-height: 60px;
+  color: #444;
+  font-size: 50px;
+}
+
+@media (max-width:700px){
+  .officeBearer-title{
+    padding-right: 0px;
+    text-align: center;
+    line-height: 60px;
+    color : #444;
+    font-size: 40px;
+  }
+}
+
+.officesection{
+  background: rgba(35,35,35,0.88);
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 /* Strength Section */
 
 .teamQuizInc-title{
-  padding-top: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   position: relative;
   line-height: 60px;
-  color :#e68027;
-  font-size: 40px;
-  margin-bottom: 30px;
+  color: #444;
+  font-size: 50px;
 }
-.teamQuizInc-title:after{
+
+@media (max-width:700px){
+  .teamQuizInc-title{
+    padding-right: 0px;
+    text-align: center;
+    line-height: 60px;
+    color : #444;
+    font-size: 40px;
+  }
+}
+
+/* .teamQuizInc-title:after{
   content: '';
   background: #fff;
   width: 120px;
@@ -293,17 +293,45 @@
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
+} */
+
+.new-session-title{
+  background: rgba(35,35,35,0.88);
 }
 
+.session-quiz-title{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  padding-left: 70px;
+  position: relative;
+  line-height: 60px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(../../assets/backtext.png);
+  -webkit-background-clip: text;
+  background-color: #e68027;
+  background-position: 0 0;
+  animation: back 5s linear infinite;
+  font-size: 60px;
+}
 
-
-
-
+@media (max-width:700px){
+  .session-quiz-title{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    text-align: center;
+    color :#e68027;
+    font-size: 30px;
+    -webkit-text-stroke: 1px #fff;
+  }
+}
 
 
 /* Strength section css*/
 #strength{
-  background: rgba(0, 0, 0, 0.7);
+  background: #fff;
 }
 
 .swiperpart{
@@ -311,22 +339,16 @@
 }
 
 
-/* After office bearer section */
-
-
-
-
 /* Get in touch css */
 
 #contact{
-  /* background: rgba(0, 0, 0, 0.7); */
   background: rgba(35,35,35,0.88);
   padding-bottom: 70px;
 }
 
 
 .getInTouch-title{
-  padding-top: 60px;
+  padding-top: 50px;
   text-align: center;
   position: relative;
   line-height: 60px;
@@ -347,7 +369,7 @@
 }
 
 .get-in-touch{
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 .get-in-touch-content{
@@ -385,6 +407,13 @@
 }
 
 @media (max-width:700px){
+
+  .getInTouch-title{
+    padding-top: 20px;
+  }
+  .get-in-touch{
+    margin-top: 30px;
+  }
 
   .contact-link{
     flex-direction: column;

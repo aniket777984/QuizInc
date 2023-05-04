@@ -1,10 +1,6 @@
 import React from 'react';
 import "./Quizzitch.css";
 import geeks from "../../assets/GeeksforGeeks.png";
-import booked from "../../assets/Boookd.jpeg";
-import iim from "../../assets/2IIM.png";
-import preBytes from "../../assets/prepbytes.png";
-import stock from "../../assets/Stockgro.jpeg";
 import skillvertex from "../../assets/Skillvertex.jpeg";
 
 import belgian from "../../assets/sponser/belgian.jpeg";
@@ -66,8 +62,8 @@ const Quizzitch = () => {
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         <h2>YHills</h2>
                     </div>
-                    <div className="sponserlistitemmiddle">
-                        <h3>Refreshment Partner</h3>
+                    <div className="sponserlistitem">
+                        <h3>Refreshment</h3>
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         <h2>Belgian Waffle</h2>
                     </div>
@@ -76,7 +72,7 @@ const Quizzitch = () => {
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         <h2>Wonders Cafe</h2>
                     </div>
-                    <div className="sponserlistitemmiddle">
+                    <div className="sponserlistitem">
                         <h3>Food Partner</h3>
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         <h2>The Legends</h2>
