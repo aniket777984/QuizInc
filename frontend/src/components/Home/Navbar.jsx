@@ -83,7 +83,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="quizink" id="menuLink">
-            <a href="https://quizinc.co.in/quizink/" id="menuLinkactual">
+            <a href="https://quizinc-nitd.github.io/quizink/" id="menuLinkactual">
               QuizInk
             </a>
           </li>
