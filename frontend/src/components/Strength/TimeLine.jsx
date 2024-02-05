@@ -27,7 +27,7 @@ const TimeLine = () => {
                   <div className="timeline-year-logo">
                     <img src={second} alt="second" />
                   </div>
-                  <h1>First Year</h1>
+                  <h1>Second Year</h1>
                 </div>
               </a>
             </li>
