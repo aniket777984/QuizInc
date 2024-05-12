@@ -14,7 +14,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/config/config.env" });
 }
 
-let port = 5000 || process.env.PORT;
+let port = process.env.PORT;
 // Connecting to database
 connectDatabase();
 
