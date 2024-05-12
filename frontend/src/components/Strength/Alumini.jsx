@@ -85,7 +85,15 @@ import pratik from "../../assets/alumini/2023/pratik.jpg";
 import vaishali from "../../assets/alumini/2023/vaishali.jpg";
 import saptaparna from "../../assets/alumini/2023/saptaparna.jpg";
 
+import Arindam from "../../assets/Arindam.jpg";
+import Debasmita from "../../assets/Debasmita.jpg";
+import Drishita from "../../assets/Drishita.jpg";
 import Durbar from "../../assets/Durbar.jpg";
+import Kaushal from "../../assets/Kaushal.jpg";
+import Kushagra from "../../assets/Kushagra.jpg";
+import Prasun from "../../assets/Prasun.jpg";
+import Sagnik from "../../assets/Sagnik.jpg";
+import Shobhit from "../../assets/Shobhit.jpg";
 
 import MetaData from "../layout/MetaData";
 
@@ -104,64 +112,64 @@ const Alumini = () => {
               <div class="aluminiStrengthCard">
                 <div class="aluminiStrengthContent">
                   <img src={Durbar} alt="aniket" />
-                  <h3>Durbar Chakravarty</h3>
+                  <h3>Durbar Chakraborty</h3>
                   <h4>Computer Science and Engineering</h4>
                 </div>
               </div>
               <div class="aluminiStrengthCard">
                 <div class="aluminiStrengthContent">
-                  <img src={souryatanu} alt="aniket" />
-                  <h3>Souryatanu Saha</h3>
-                  <h4>Material and Metallurjy Enginnering</h4>
+                  <img src={Prasun} alt="aniket" />
+                  <h3>Prasun Kumar Das</h3>
+                  <h4>Mechanical Enginnering</h4>
                 </div>
               </div>
               <div class="aluminiStrengthCard">
                 <div class="aluminiStrengthContent">
-                  <img src={ankit2} alt="aniket" />
-                  <h3>Ankit Rai</h3>
-                  <h4>Material and Metallurjy Enginnering</h4>
-                </div>
-              </div>
-              <div class="aluminiStrengthCard">
-                <div class="aluminiStrengthContent">
-                  <img src={Ridam} alt="aniket" />
-                  <h3>Ridam Hazra</h3>
+                  <img src={Kaushal} alt="aniket" />
+                  <h3>Kaushal Baid</h3>
                   <h4>Computer Science and Engineering</h4>
                 </div>
               </div>
               <div class="aluminiStrengthCard">
                 <div class="aluminiStrengthContent">
-                  <img src={pratik} alt="aniket" />
-                  <h3>Pratik Choudhary</h3>
+                  <img src={Shobhit} alt="aniket" />
+                  <h3>Shobhit Katiyar</h3>
+                  <h4>Metallurgical Engineering</h4>
+                </div>
+              </div>
+              <div class="aluminiStrengthCard">
+                <div class="aluminiStrengthContent">
+                  <img src={Kushagra} alt="aniket" />
+                  <h3>Kushagra Pratap Singh</h3>
+                  <h4>Mechanical Engineering</h4>
+                </div>
+              </div>
+              <div class="aluminiStrengthCard">
+                <div class="aluminiStrengthContent">
+                  <img src={Sagnik} alt="aniket" />
+                  <h3>Sagnik Khan</h3>
+                  <h4>Metallurgical Engineering</h4>
+                </div>
+              </div>
+              <div class="aluminiStrengthCard">
+                <div class="aluminiStrengthContent">
+                  <img src={Drishita} alt="aniket" />
+                  <h3>Drishita Nag</h3>
+                  <h4>Mechanical Engineering</h4>
+                </div>
+              </div>
+              <div class="aluminiStrengthCard">
+                <div class="aluminiStrengthContent">
+                  <img src={Debasmita} alt="aniket" />
+                  <h3>Debasmita Das</h3>
+                  <h4>Electrical Engineering</h4>
+                </div>
+              </div>
+              <div class="aluminiStrengthCard">
+                <div class="aluminiStrengthContent">
+                  <img src={Arindam} alt="aniket" />
+                  <h3>Arindam Mandal</h3>
                   <h4>Civil Engineering</h4>
-                </div>
-              </div>
-              <div class="aluminiStrengthCard">
-                <div class="aluminiStrengthContent">
-                  <img src={pranit} alt="aniket" />
-                  <h3>Pranit Pandey</h3>
-                  <h4>Computer Science and Engineering</h4>
-                </div>
-              </div>
-              <div class="aluminiStrengthCard">
-                <div class="aluminiStrengthContent">
-                  <img src={arka} alt="aniket" />
-                  <h3>Arka Seth</h3>
-                  <h4>Computer Science and Engineering</h4>
-                </div>
-              </div>
-              <div class="aluminiStrengthCard">
-                <div class="aluminiStrengthContent">
-                  <img src={vaishali} alt="aniket" />
-                  <h3>Vaishali Barua</h3>
-                  <h4>Electronics and Communication Engineering</h4>
-                </div>
-              </div>
-              <div class="aluminiStrengthCard">
-                <div class="aluminiStrengthContent">
-                  <img src={anand} alt="aniket" />
-                  <h3>Anand Nagar</h3>
-                  <h4>Chemical Engineering</h4>
                 </div>
               </div>
             </div>
