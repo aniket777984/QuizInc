@@ -27,15 +27,15 @@ import NewUpcomingEvent from "./components/Admin/NewUpcomingEvent";
 import SponserList from "./components/Admin/SponserList";
 import UpcomingEventList from "./components/Admin/UpcomingEventList";
 
-
 import UpdateProfile from "./components/User/UpdateProfile";
 import UpdatePassword from "./components/User/UpdatePassword";
 import WelcomePage from "./components/Quiz/WelcomePage";
 import "swiper/css/bundle";
 import Third from "./components/Strength/Third";
+import SecondY from "./components/Strength/SecondY";
 import QuizzitchEvents from "./components/Strength/QuizzitchEvents";
 import FourthYear from "./components/Strength/FourthYear";
-import SecondYear from "./components/Strength/SecondYear";
+import ThirdY from "./components/Strength/ThirdY";
 import Alumini from "./components/Strength/Alumini";
 
 import QuizzItchPage from "./components/Home/QuizzItchPage";
@@ -47,7 +47,6 @@ function App() {
     store.dispatch(loadUser());
   }, []);
 
-  
   return (
     <Router>
       {/* <Header /> */}
@@ -58,20 +57,34 @@ function App() {
         <Route exact path="/events" component={QuizzitchEvents} />
         <Route exact path="/quizzitchcup" component={QuizzItchPage} />
         <Route exact path="/strength/fourth" component={FourthYear} />
-        <Route exact path="/strength/second" component={SecondYear} />
+        {/* <Route exact path="/strength/first" component={FirstYear} /> */}
+        <Route exact path="/strength/second" component={SecondY} />
         <Route exact path="/strength/alumini" component={Alumini} />
 
         <Route exact path="/login" component={LoginSignUp} />
         <ProtectedRoute exact path="/account" component={Profile} />
         <ProtectedRoute exact path="/me/update" component={UpdateProfile} />
-        <ProtectedRoute exact path="/password/update" component={UpdatePassword} />
+        <ProtectedRoute
+          exact
+          path="/password/update"
+          component={UpdatePassword}
+        />
         <ProtectedRoute exact path="/play/welcome" component={WelcomePage} />
-        <ProtectedRoute isState={true} exact path="/play/quiz" component={Quiz} />
+        <ProtectedRoute
+          isState={true}
+          exact
+          path="/play/quiz"
+          component={Quiz}
+        />
         <ProtectedRoute exact path="/play/quiz/end" component={EndPage} />
         <ProtectedRoute exact path="/quiz/result" component={Result} />
-        <ProtectedRoute exact path="/display/leaderboard" component={LeaderBoard} />
+        <ProtectedRoute
+          exact
+          path="/display/leaderboard"
+          component={LeaderBoard}
+        />
 
-        <Route exact path="/strength/third" component={Third} />
+        <Route exact path="/strength/third" component={ThirdY} />
 
         <ProtectedRoute
           isAdmin={true}
@@ -79,17 +92,61 @@ function App() {
           path="/admin/dashboard"
           component={Dashboard}
         />
-        <ProtectedRoute isAdmin={true} exact path="/admin/sponser" component= {NewSponser} />
-        <ProtectedRoute isAdmin={true} exact path="/admin/sponsers" component= {SponserList} />
+        <ProtectedRoute
+          isAdmin={true}
+          exact
+          path="/admin/sponser"
+          component={NewSponser}
+        />
+        <ProtectedRoute
+          isAdmin={true}
+          exact
+          path="/admin/sponsers"
+          component={SponserList}
+        />
 
-
-        <ProtectedRoute isAdmin={true} exact path="/admin/upcomingevent" component= {NewUpcomingEvent} />
-        <ProtectedRoute isAdmin={true} exact path="/admin/upcomingevents" component= {UpcomingEventList} />
-        <ProtectedRoute isAdmin={true} exact path="/admin/users" component= {UsersList} />
-        <ProtectedRoute isAdmin={true} exact path="/admin/questions" component= {QuestionList} />
-        <ProtectedRoute isAdmin={true} exact path="/admin/user/:id" component= {UpdateUser} />
-        <ProtectedRoute isAdmin={true} exact path="/admin/delete/user/:id" component= {DeleteUser} />
-        <ProtectedRoute isAdmin={true} exact path="/admin/new/question" component= {NewQuestion} />
+        <ProtectedRoute
+          isAdmin={true}
+          exact
+          path="/admin/upcomingevent"
+          component={NewUpcomingEvent}
+        />
+        <ProtectedRoute
+          isAdmin={true}
+          exact
+          path="/admin/upcomingevents"
+          component={UpcomingEventList}
+        />
+        <ProtectedRoute
+          isAdmin={true}
+          exact
+          path="/admin/users"
+          component={UsersList}
+        />
+        <ProtectedRoute
+          isAdmin={true}
+          exact
+          path="/admin/questions"
+          component={QuestionList}
+        />
+        <ProtectedRoute
+          isAdmin={true}
+          exact
+          path="/admin/user/:id"
+          component={UpdateUser}
+        />
+        <ProtectedRoute
+          isAdmin={true}
+          exact
+          path="/admin/delete/user/:id"
+          component={DeleteUser}
+        />
+        <ProtectedRoute
+          isAdmin={true}
+          exact
+          path="/admin/new/question"
+          component={NewQuestion}
+        />
       </Switch>
     </Router>
   );

@@ -2,7 +2,6 @@ const Question = require("../models/questionModel");
 const ErrorHandler = require("../utils/errorhandler");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 
-// Create a question
 exports.createQuestion = catchAsyncErrors(async (req, res, next) => {
   const question = await Question.create(req.body);
   res.status(200).json({
@@ -45,7 +44,6 @@ exports.getQuestionDetails = catchAsyncErrors(async (req, res, next) => {
 });
 
 exports.deleteQuestion = catchAsyncErrors(async (req, res, next) => {
-
   const question = await Question.findById(req.params.id);
 
   if (!question) {
@@ -61,24 +59,23 @@ exports.deleteQuestion = catchAsyncErrors(async (req, res, next) => {
 });
 
 // Update A  question -  Admin
-exports.updateQuestion = catchAsyncErrors(async(req,res,next)=>{
+exports.updateQuestion = catchAsyncErrors(async (req, res, next) => {
+  let question = await Question.findById(req.params.id);
 
-    let question = await Question.findById(req.params.id);
+  if (!question) {
+    return next(new ErrorHandler("Question Not Found", 404));
+  }
+  if (req.body.score) {
+    question.score = req.body.score;
+  }
+  if (req.body.category) {
+    question.category = req.body.category;
+  }
 
-    if(!question){
-        return next(new ErrorHandler("Question Not Found" ,  404));
-    }
-    if(req.body.score){
-        question.score = req.body.score;
-    }
-    if(req.body.category){
-        question.category  = req.body.category;
-    }
+  await question.save();
 
-    await question.save();
-
-    res.status(200).json({
-        success  :true,
-        question,
-    })
-})
+  res.status(200).json({
+    success: true,
+    question,
+  });
+});

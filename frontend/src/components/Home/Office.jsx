@@ -1,24 +1,24 @@
 import React from "react";
 import "./Office.css";
-import Debasmita from "../../assets/Debasmita.jpg";
-import Drishita from "../../assets/Drishita.jpg";
-import Durbar from "../../assets/Durbar.jpg";
-import Kaushal from "../../assets/Kaushal.jpg";
-import Kushagra from "../../assets/Kushagra.jpg";
-import Prasun from "../../assets/Prasun.jpg";
-import Sagnik from "../../assets/Sagnik.jpg";
-import Shobhit from "../../assets/Shobhit.jpg";
+import Prerna from "../../assets/Prerna.jpg";
+import Aditya from "../../assets/Aditya.jpg";
+import AniketDas from "../../assets/Aniket_Das.jpg";
+import Aniket from "../../assets/Aniket.jpg";
+import Rajdeep from "../../assets/Rajdeep.jpg";
+import Soumik from "../../assets/Soumik.jpg";
+import Tejas from "../../assets/Tejas.jpg";
+import Tamoghna from "../../assets/Tamoghna.jpg";
+import raunak from "../../assets/raunak.jpg";
+import uditayan from "../../assets/uditayan.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Office = () => {
-
-
-    AOS.init({
-        offset:240,
-        duration: 1000,
-      });    
+  AOS.init({
+    offset: 240,
+    duration: 1000,
+  });
 
   return (
     <div class="homeOffice">
@@ -26,20 +26,20 @@ const Office = () => {
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
             <div class="homeOfficeProfile">
-              <img src={Durbar} class="user-img" alt="Aniket" />
-              <h2>Durbar Chakraborty</h2>
+              <img src={AniketDas} class="user-img" alt="Aniket" />
+              <h2>Aniket Das</h2>
               <p>President</p>
             </div>
           </div>
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 8670122218</h3>
+              <h3>+91 7044563803</h3>
               <div class="homeOfficesocialImage">
-                <a href="https://m.facebook.com/durbar.chakrabarty.7?ref=bookmarks">
+                <a href="https://www.facebook.com/profile.php?id=100015299378060">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="https://instagram.com/_durbar1204_?utm_medium=copy_link">
+                <a href="https://www.instagram.com/not_aniket_/">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
@@ -52,20 +52,20 @@ const Office = () => {
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
             <div class="homeOfficeProfile">
-              <img src={Prasun} class="user-img" alt="Aniket" />
-              <h2>Prasun Kumar Das</h2>
+              <img src={Rajdeep} class="user-img" alt="Rajdeep" />
+              <h2>Rajdeep Saha</h2>
               <p>Secretary</p>
             </div>
           </div>
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 6289762518</h3>
+              <h3>+91 9883487146</h3>
               <div class="homeOfficesocialImage">
-                <a href="https://www.facebook.com/prasun.kumardas.7311">
+                <a href="https://www.facebook.com/profile.php?id=100072838294525">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="https://instagram.com/prasun_k_d?utm_medium=copy_link">
+                <a href="https://www.instagram.com/instarajdeep/">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
@@ -74,25 +74,24 @@ const Office = () => {
         </div>
       </div>
 
-
       <div class="homeOfficeCard" data-aos="zoom-in">
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
             <div class="homeOfficeProfile">
-              <img src={Kaushal} class="user-img" alt="Aniket" />
-              <h2>Kaushal Baid</h2>
+              <img src={Tamoghna} class="user-img" alt="Aniket" />
+              <h2>Tamoghna Dutta</h2>
               <p>Vice President</p>
             </div>
           </div>
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 7044666331</h3>
+              <h3>+91 7439706092</h3>
               <div class="homeOfficesocialImage">
-                <a href="https://www.facebook.com/kaushalbaid16">
+                <a href="https://www.facebook.com/profile.php?id=100076938982610">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="https://www.instagram.com/kaushal168">
+                <a href="https://www.instagram.com/tamoghna_dutta/">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
@@ -105,20 +104,20 @@ const Office = () => {
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
             <div class="homeOfficeProfile">
-              <img src={Shobhit} class="user-img" alt="Aniket" />
-              <h2>Shobhit Katiyar</h2>
+              <img src={Prerna} class="user-img" alt="Aniket" />
+              <h2>Prerna Sharma</h2>
               <p>Treasurer</p>
             </div>
           </div>
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 6387385618</h3>
+              <h3>+91 6295187168</h3>
               <div class="homeOfficesocialImage">
-                <a href="https://www.facebook.com/shobhit.katiyar.167189">
+                <a href="https://www.facebook.com/profile.php?id=100076278952974">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="https://www.instagram.com/kati_yar_shobhit/">
+                <a href="https://www.instagram.com/prerna13sharma/">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
@@ -131,20 +130,20 @@ const Office = () => {
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
             <div class="homeOfficeProfile">
-              <img src={Kushagra} class="user-img" alt="Aniket" />
-              <h2>Kushagra Pratap Singh</h2>
-              <p>Convener</p>
+              <img src={raunak} class="user-img" alt="Aniket" />
+              <h2>Rounak Sarkar</h2>
+              <p>Convenor</p>
             </div>
           </div>
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 9528682317</h3>
+              <h3>+91 9330107094</h3>
               <div class="homeOfficesocialImage">
-                <a href="https://www.facebook.com/people/Kushagra-Pratap-Singh/100055917695780/">
+                <a href="https://m.facebook.com/profile.php?id=100077507754273">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="https://www.instagram.com/kush_agra_pratap/?igshid=1ogfknpxidolu">
+                <a href="https://instagram.com/rounak_396?igshid=ZDdkNTZiNTM=">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
@@ -157,20 +156,20 @@ const Office = () => {
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
             <div class="homeOfficeProfile">
-              <img src={Sagnik} class="user-img" alt="Aniket" />
-              <h2>Sagnik Khan</h2>
-              <p>Joint Secretary</p>
+              <img src={Soumik} class="user-img" alt="Aniket" />
+              <h2>Soumik Biswas</h2>
+              <p>Assistant Secretary & Quiz Coordinator</p>
             </div>
           </div>
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 8420074884</h3>
+              <h3>+91 6290575119</h3>
               <div class="homeOfficesocialImage">
-                <a href="https://www.facebook.com/profile.php?id=100010971364639">
+                <a href="https://www.facebook.com/sou.bis.9">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="https://instagram.com/sagniiiik?utm_medium=copy_link">
+                <a href="https://www.instagram.com/_soumiik_/">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
@@ -178,53 +177,77 @@ const Office = () => {
           </div>
         </div>
       </div>
-      
 
-      
       <div class="homeOfficeCard" data-aos="zoom-in">
         <div class="homeOfficeInnerBox" id="card">
           <div class="homeOfficeCardFront">
             <div class="homeOfficeProfile">
-              <img src={Drishita} class="user-img" alt="Aniket" />
-              <h2>Drishita Nag</h2>
+              <img src={Aniket} class="user-img" alt="Aniket" />
+              <h2>Aniket Gupta</h2>
+              <p>Tech Head</p>
+            </div>
+          </div>
+          <div class="homeOfficeCardBack">
+            <div class="homeOfficeData">
+              <p>Contact Handles</p>
+              <h3>+91 8789518214</h3>
+              <div class="homeOfficesocialImage">
+                <a href="https://www.facebook.com/profile.php?id=100075359740072">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="https://www.instagram.com/aniket777984/">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="homeOfficeCard" data-aos="zoom-in">
+        <div class="homeOfficeInnerBox" id="card">
+          <div class="homeOfficeCardFront">
+            <div class="homeOfficeProfile">
+              <img src={Tejas} class="user-img" alt="Aniket" />
+              <h2>Tejas Sandwar</h2>
+              <p>GD Head</p>
+            </div>
+          </div>
+          <div class="homeOfficeCardBack">
+            <div class="homeOfficeData">
+              <p>Contact Handles</p>
+              <h3>+91 9693808710</h3>
+              <div class="homeOfficesocialImage">
+                <a href="https://www.facebook.com/profile.php?id=100078248832807">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="https://www.instagram.com/tejassandwar/">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="homeOfficeCard" data-aos="zoom-in">
+        <div class="homeOfficeInnerBox" id="card">
+          <div class="homeOfficeCardFront">
+            <div class="homeOfficeProfile">
+              <img src={Aditya} class="user-img" alt="Aniket" />
+              <h2>Aditya Raj</h2>
               <p>Sponsorship And Logistics Head</p>
             </div>
           </div>
           <div class="homeOfficeCardBack">
             <div class="homeOfficeData">
               <p>Contact Handles</p>
-              <h3>+91 7797061920</h3>
+              <h3>+91 8340183323</h3>
               <div class="homeOfficesocialImage">
-                <a href="https://www.facebook.com/profile.php?id=100005992849461">
+                <a href="https://www.facebook.com/profile.php?id=100073591507023">
                   <i class="fa fa-facebook facebook" aria-hidden="true" />
                 </a>
-                <a href="https://instagram.com/drishita__?igshid=39cjpgpzs56h">
-                  <i class="fa fa-instagram instagram" aria-hidden="true" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="homeOfficeCard" data-aos="zoom-in">
-        <div class="homeOfficeInnerBox" id="card">
-          <div class="homeOfficeCardFront">
-            <div class="homeOfficeProfile">
-              <img src={Debasmita} class="user-img" alt="Aniket" />
-              <h2>Debasmita Das</h2>
-              <p>PR Head</p>
-            </div>
-          </div>
-          <div class="homeOfficeCardBack">
-            <div class="homeOfficeData">
-              <p>Contact Handles</p>
-              <h3>+91 9883898007</h3>
-              <div class="homeOfficesocialImage">
-                <a href="https://www.facebook.com/profile.php?id=100057522737824">
-                  <i class="fa fa-facebook facebook" aria-hidden="true" />
-                </a>
-                <a href="https://instagram.com/debasmita.das__?utm_medium=copy_link">
+                <a href="https://www.instagram.com/adityaraj.1701/">
                   <i class="fa fa-instagram instagram" aria-hidden="true" />
                 </a>
               </div>
@@ -233,6 +256,31 @@ const Office = () => {
         </div>
       </div>
 
+      <div class="homeOfficeCard" data-aos="zoom-in">
+        <div class="homeOfficeInnerBox" id="card">
+          <div class="homeOfficeCardFront">
+            <div class="homeOfficeProfile">
+              <img src={uditayan} class="user-img" alt="Aniket" />
+              <h2>Uditayan Debnath</h2>
+              <p>PR Head</p>
+            </div>
+          </div>
+          <div class="homeOfficeCardBack">
+            <div class="homeOfficeData">
+              <p>Contact Handles</p>
+              <h3>+91 9609119655</h3>
+              <div class="homeOfficesocialImage">
+                <a href="https://www.facebook.com/uditayan.debnath?mibextid=ZbWKwL">
+                  <i class="fa fa-facebook facebook" aria-hidden="true" />
+                </a>
+                <a href="https://instagram.com/demon_cazzboi?igshid=ZDdkNTZiNTM=">
+                  <i class="fa fa-instagram instagram" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
