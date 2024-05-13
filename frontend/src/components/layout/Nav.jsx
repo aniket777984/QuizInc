@@ -3,26 +3,25 @@ import "./Nav.css";
 import logo from "../../assets/logo.png";
 
 const Nav = () => {
+  const sections = document.querySelectorAll("section");
+  const navLi = document.querySelectorAll("nav ul li");
 
-    const sections = document.querySelectorAll("section");
-    const navLi = document.querySelectorAll("nav ul li");
-  
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
-  
-      navLi.forEach((li) => {
-        li.classList.remove("active");
-        if (li.classList.contains(current)) {
-          li.classList.add("active");
-        }
-      });
-    });  
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      if (window.pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLi.forEach((li) => {
+      li.classList.remove("active");
+      if (li.classList.contains(current)) {
+        li.classList.add("active");
+      }
+    });
+  });
 
   var navbar = document.getElementById("aluminiNavbar");
   var menu = document.getElementById("menu");
@@ -35,10 +34,10 @@ const Nav = () => {
     }
   };
 
-  document.onclick = function(e){
-    if(e.target.id == "menuLink" || e.target.id == "menuLinkactual")
-    document.getElementById("click").checked = false;
-  }
+  document.onclick = function (e) {
+    if (e.target.id == "menuLink" || e.target.id == "menuLinkactual")
+      document.getElementById("click").checked = false;
+  };
 
   return (
     <>
@@ -49,38 +48,65 @@ const Nav = () => {
           <i class="fas fa-bars"></i>
         </label>
         <ul id="menu">
+          <li className="2024" id="menuLink">
+            <a href="#2024" id="menuLinkactual">
+              2024
+            </a>
+          </li>
           <li className="2023" id="menuLink">
-            <a href="#2023" id="menuLinkactual">2023</a>
+            <a href="#2023" id="menuLinkactual">
+              2023
+            </a>
           </li>
           <li className="2022" id="menuLink">
-            <a href="#2022" id="menuLinkactual">2022</a>
+            <a href="#2022" id="menuLinkactual">
+              2022
+            </a>
           </li>
           <li className="2021" id="menuLink">
-            <a href="#2021" id="menuLinkactual">2021</a>
+            <a href="#2021" id="menuLinkactual">
+              2021
+            </a>
           </li>
           <li className="2020" id="menuLink">
-            <a href="#2020" id="menuLinkactual">2020</a>
+            <a href="#2020" id="menuLinkactual">
+              2020
+            </a>
           </li>
           <li className="2019" id="menuLink">
-            <a href="#2019" id="menuLinkactual">2019</a>
+            <a href="#2019" id="menuLinkactual">
+              2019
+            </a>
           </li>
           <li className="2018" id="menuLink">
-            <a href="#2018" id="menuLinkactual">2018</a>
+            <a href="#2018" id="menuLinkactual">
+              2018
+            </a>
           </li>
           <li className="2017" id="menuLink">
-            <a href="#2017" id="menuLinkactual">2017</a>
+            <a href="#2017" id="menuLinkactual">
+              2017
+            </a>
           </li>
           <li className="2016" id="menuLink">
-            <a href="#2016" id="menuLinkactual">2016</a>
+            <a href="#2016" id="menuLinkactual">
+              2016
+            </a>
           </li>
           <li className="2015" id="menuLink">
-            <a href="#2015" id="menuLinkactual">2015</a>
+            <a href="#2015" id="menuLinkactual">
+              2015
+            </a>
           </li>
           <li className="2014" id="menuLink">
-            <a href="#2014" id="menuLinkactual">2014</a>
+            <a href="#2014" id="menuLinkactual">
+              2014
+            </a>
           </li>
           <li className="home activeforever" id="menuLink">
-            <a href="/" id="menuLinkactual">Home</a>
+            <a href="/" id="menuLinkactual">
+              Home
+            </a>
           </li>
         </ul>
       </nav>

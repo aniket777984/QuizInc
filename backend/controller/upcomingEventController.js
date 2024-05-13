@@ -3,8 +3,6 @@ const ErrorHandler = require("../utils/errorhandler");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const cloudinary = require("cloudinary");
 
-// Create Upcoming Event
-
 exports.createUpcomingEvent = catchAsyncErrors(async (req, res, next) => {
   let images = [];
 
