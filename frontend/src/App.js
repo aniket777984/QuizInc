@@ -31,7 +31,6 @@ import UpdateProfile from "./components/User/UpdateProfile";
 import UpdatePassword from "./components/User/UpdatePassword";
 import WelcomePage from "./components/Quiz/WelcomePage";
 import "swiper/css/bundle";
-import Third from "./components/Strength/Third";
 import SecondY from "./components/Strength/SecondY";
 import QuizzitchEvents from "./components/Strength/QuizzitchEvents";
 import FourthYear from "./components/Strength/FourthYear";

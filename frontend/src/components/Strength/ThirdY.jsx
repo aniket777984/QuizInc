@@ -5,8 +5,8 @@ import anamitra from "../../assets/second/anamitra.jpg";
 import ankan from "../../assets/second/ankan.jpg";
 import ankit from "../../assets/second/ankit.jpg";
 import annwesha from "../../assets/second/annwesha.jpg";
-import arin from "../../assets/second/arin.jpg";
-import bose from "../../assets/second/bose.jpg";
+import niket from "../../assets/second/niket.jpg";
+import pritam from "../../assets/second/pritam.jpg";
 import prashant from "../../assets/second/prashant.jpg";
 import ramesh from "../../assets/second/ramesh.jpg";
 import souvik from "../../assets/second/souvik.jpg";
@@ -107,15 +107,19 @@ const SecondYear = () => {
           </div>
           <div class="secondYearStrengthCard" ref={tilt3} {...options}>
             <div class="secondYearStrengthContent">
-              <img src={arin} alt="aniket" />
-              <h3>Arin Pramanick</h3>
+              <img
+                src={niket}
+                alt="niket"
+                style={{ height: "125.28px", width: "125.29px" }}
+              />
+              <h3>Sri Niket Kumar</h3>
               <p>CSE</p>
               <h5>Contact Handles</h5>
-              <p>8337003108</p>
-              <a href="https://www.facebook.com/arin.pramanick.9?mibextid=ZbWKwL">
+              <p>7549699827</p>
+              <a href="https://www.facebook.com/">
                 <i class="fa fa-facebook facebook" aria-hidden="true" />
               </a>
-              <a href="https://instagram.com/_.arinn..?igshid=YmMyMTA2M2Y=">
+              <a href="https://instagram.com/">
                 <i class="fa fa-instagram instagram" aria-hidden="true" />
               </a>
             </div>
@@ -146,6 +150,25 @@ const SecondYear = () => {
                 <i class="fa fa-facebook facebook" aria-hidden="true" />
               </a>
               <a href="https://instagram.com/cheeztacos?igshid=ZDdkNTZiNTM=">
+                <i class="fa fa-instagram instagram" aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+          <div class="secondYearStrengthCard" ref={tilt11} {...options}>
+            <div class="secondYearStrengthContent">
+              <img
+                src={pritam}
+                alt="Pritam"
+                style={{ height: "125.28px", width: "125.29px" }}
+              />
+              <h3>Pritam Das</h3>
+              <p>CSE</p>
+              <h5>Contact Handles</h5>
+              <p>877271035</p>
+              <a href="https://www.facebook.com/profile.php?id=100009887055873&mibextid=ZbWKwL">
+                <i class="fa fa-facebook facebook" aria-hidden="true" />
+              </a>
+              <a href="https://www.instagram.com/pritam._?utm_source=qr&igsh=NXV2enA3dnk4aWQ2">
                 <i class="fa fa-instagram instagram" aria-hidden="true" />
               </a>
             </div>
@@ -221,21 +244,6 @@ const SecondYear = () => {
                 <i class="fa fa-facebook facebook" aria-hidden="true" />
               </a>
               <a href="https://instagram.com/prashanth_annaa?igshid=ZDdkNTZiNTM=">
-                <i class="fa fa-instagram instagram" aria-hidden="true" />
-              </a>
-            </div>
-          </div>
-          <div class="secondYearStrengthCard" ref={tilt11} {...options}>
-            <div class="secondYearStrengthContent">
-              <img src={bose} alt="aniket" />
-              <h3>Siddhanth Bose</h3>
-              <p>ME</p>
-              <h5>Contact Handles</h5>
-              <p>8583922889</p>
-              <a href="#">
-                <i class="fa fa-facebook facebook" aria-hidden="true" />
-              </a>
-              <a href="https://instagram.com/rik0654?igshid=ZDdkNTZiNTM=">
                 <i class="fa fa-instagram instagram" aria-hidden="true" />
               </a>
             </div>
