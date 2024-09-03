@@ -1,21 +1,12 @@
-import React,{useState} from "react";
-import {Link} from "react-router-dom";
-// import biztech from '../../assets/Biztech.jpeg';
-// import interNit from "../../assets/Inter-NIT.jpeg";
-// import mela from "../../assets/MELA.jpeg";
-// import school from "../../assets/School.jpeg";
-// import Shatranj from "../../assets/Shatranj.jpeg";
-// import Sports from "../../assets/Sports.jpeg";
-import bmep from "../../assets/events/bmep.jpg";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import buisness from "../../assets/events/business.jpeg";
-import eventlist from "../../assets/events/eventlist.jpeg";
-import india from "../../assets/events/india.jpeg";
-import mela from "../../assets/events/mela.jpeg";
-import monopoly from "../../assets/events/monopoly.jpeg";
 import sports from "../../assets/events/sports.jpeg";
-// import {Dialog,DialogActions,DialogContent,DialogTitle,Button} from "@material-ui/core";
-
-
+import fandom from "../../assets/events/fandom.jpeg";
+import geopolitics from "../../assets/events/geopolitics.jpeg";
+import qmanji from "../../assets/events/qmanji.jpeg";
+import bidbash from "../../assets/events/bidbash.jpeg";
+import ott_sitcom from "../../assets/events/ott_sitcom.jpeg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -27,15 +18,11 @@ import SwiperCore, {
   Navigation,
 } from "swiper/core";
 
-//Always write this important at last
 import "./SwiperSlider.css";
-
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 const SwiperSlider = () => {
-
-
   return (
     <div className="container">
       <Swiper
@@ -57,28 +44,27 @@ const SwiperSlider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={sports} alt="Aniket" />
+          <img src={sports} alt="Niket" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bmep} alt="Aniket" />
+          <img src={qmanji} alt="Niket" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={mela} alt="Aniket" />
+          <img src={fandom} alt="Niket" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={monopoly} alt="Aniket" />
+          <img src={geopolitics} alt="Niket" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={india} alt="Aniket" />
+          <img src={buisness} alt="Niket" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={buisness} alt="Aniket" />
+          <img src={bidbash} alt="Niket" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={eventlist} alt="Aniket" />
+          <img src={ott_sitcom} alt="Niket" />
         </SwiperSlide>
       </Swiper>
-
     </div>
   );
 };
