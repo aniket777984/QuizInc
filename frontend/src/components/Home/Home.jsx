@@ -197,7 +197,7 @@ const Home = () => {
                 <br />
               </div>
               <div class="copyright">
-                <h2>All rights reserved. Copyright © QuizInc 2023</h2>
+                <h2>All rights reserved. Copyright © QuizInc 2024</h2>
               </div>
             </div>
           </div>
